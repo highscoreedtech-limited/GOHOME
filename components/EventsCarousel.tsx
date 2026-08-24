@@ -52,9 +52,10 @@ export function EventsCarousel({ events }: { events: EventItem[] }) {
         ))}
       </div>
 
-      {/* Mobile / tablet carousel */}
-      <div className="lg:hidden">
-        <div className="overflow-hidden" ref={emblaRef}>
+      {/* Mobile / tablet carousel. min-w-0 keeps the flex viewport from
+          stretching its parent wider than the screen. */}
+      <div className="min-w-0 lg:hidden">
+        <div className="min-w-0 overflow-hidden" ref={emblaRef}>
           <div className="flex touch-pan-y">
             {events.map((event) => (
               <div

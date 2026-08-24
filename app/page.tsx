@@ -27,8 +27,10 @@ export default function HomePage() {
         <section className="bg-brand-cream py-16 sm:py-20 lg:py-24">
           <Container>
             <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
-              {/* Main column */}
-              <div className="lg:col-span-8">
+              {/* Main column. min-w-0 lets this grid track shrink below its
+                  content's min-content width (the carousel), preventing
+                  horizontal overflow on small screens. */}
+              <div className="min-w-0 lg:col-span-8">
                 {/* Upcoming Events */}
                 <Reveal>
                   <SectionHeader
@@ -55,7 +57,7 @@ export default function HomePage() {
               </div>
 
               {/* Sidebar rail */}
-              <aside className="space-y-6 lg:col-span-4">
+              <aside className="min-w-0 space-y-6 lg:col-span-4">
                 <Reveal>
                   <QuickLinksCard />
                 </Reveal>
