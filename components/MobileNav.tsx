@@ -27,25 +27,30 @@ export function MobileNav({
   return (
     <AnimatePresence>
       {open && (
-        <>
-          <motion.div
-            className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm lg:hidden"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={onClose}
-            aria-hidden="true"
-          />
-          <motion.aside
-            className="fixed right-0 top-0 z-50 flex h-full w-[86%] max-w-sm flex-col overflow-y-auto bg-brand-darker px-6 pb-10 pt-5 shadow-2xl lg:hidden"
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "tween", duration: 0.28, ease: "easeInOut" }}
-            role="dialog"
-            aria-modal="true"
-            aria-label="Mobile navigation"
-          >
+        <motion.div
+          key="overlay"
+          className="fixed inset-0 z-50 bg-black/60 lg:hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.15, ease: "easeOut" }}
+          onClick={onClose}
+          aria-hidden="true"
+        />
+      )}
+      {open && (
+        <motion.aside
+          key="drawer"
+          className="fixed right-0 top-0 z-50 flex h-full w-[86%] max-w-sm flex-col overflow-y-auto bg-brand-darker px-6 pb-10 pt-5 shadow-2xl lg:hidden"
+          initial={{ x: "100%" }}
+          animate={{ x: 0 }}
+          exit={{ x: "100%" }}
+          // easeOut starts fast so the drawer feels instant on tap.
+          transition={{ type: "tween", duration: 0.22, ease: "easeOut" }}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation"
+        >
             <div className="flex items-center justify-between">
               <Logo showTagline={false} />
               <button
@@ -126,7 +131,6 @@ export function MobileNav({
               </Button>
             </div>
           </motion.aside>
-        </>
       )}
     </AnimatePresence>
   );
