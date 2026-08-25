@@ -21,7 +21,7 @@ export function FeaturedCard({ item }: { item: LibraryItem }) {
     >
       <Link
         href={`/messages/${item.id}`}
-        className="relative w-28 shrink-0 sm:w-32"
+        className="relative w-24 shrink-0 min-[400px]:w-28 sm:w-32"
         aria-label={`${item.title} details`}
       >
         <BookCover
