@@ -53,3 +53,55 @@ export interface GalleryImage {
   src: string;
   alt: string;
 }
+
+/* ------------------------------------------------------------------ *
+ * Messages Library (frontend-only digital reading experience)
+ * ------------------------------------------------------------------ */
+
+/** A chapter/section within a library resource. Optional per resource. */
+export interface Chapter {
+  id: string;
+  title: string;
+  /** Plain text; paragraphs separated by blank lines. */
+  content: string;
+}
+
+/**
+ * A single readable resource in the Messages Library (book, message,
+ * devotional, Bible study, prayer guide, etc.).
+ *
+ * Most fields are optional so the UI can adapt to three content shapes:
+ *  - full book / multi-section message  -> `chapters`
+ *  - simple message / article           -> `content` (no chapters)
+ */
+export interface LibraryItem {
+  id: string;
+  title: string;
+  author: string;
+  description: string;
+  category: string;
+  tags: string[];
+  coverImage?: string;
+  pages?: number;
+  estimatedReadingTime?: string;
+  featured?: boolean;
+  publishedAt?: string;
+  /** Present for chaptered resources; drives the optional Table of Contents. */
+  chapters?: Chapter[];
+  /** Present for continuous (chapter-less) resources. */
+  content?: string;
+}
+
+/** Reader appearance preferences (persisted to localStorage). */
+export type ReaderTheme = "light" | "sepia" | "dark";
+
+export interface ReaderPrefs {
+  fontScale: number; // index into a font-size scale
+  theme: ReaderTheme;
+}
+
+/** Per-resource reading progress (persisted to localStorage). */
+export interface ReadingRecord {
+  progress: number; // 0..1
+  updatedAt: number; // epoch ms
+}

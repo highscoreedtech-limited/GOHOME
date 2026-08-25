@@ -14,12 +14,15 @@ export function PageHero({
   eyebrow,
   title,
   subtitle,
+  subtitleStyle = "quote",
   image,
   breadcrumb,
 }: {
   eyebrow: string;
   title: string;
   subtitle?: string;
+  /** "quote": italic serif in quotation marks (mottos); "plain": normal lead text. */
+  subtitleStyle?: "quote" | "plain";
   image: string;
   breadcrumb?: { label: string; href: string }[];
 }) {
@@ -82,16 +85,26 @@ export function PageHero({
             {title}
           </motion.h1>
 
-          {subtitle && (
-            <motion.p
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-5 max-w-2xl font-serif text-lg italic text-brand-goldLight/90 sm:text-xl"
-            >
-              &ldquo;{subtitle}&rdquo;
-            </motion.p>
-          )}
+          {subtitle &&
+            (subtitleStyle === "quote" ? (
+              <motion.p
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mt-5 max-w-2xl font-serif text-lg italic text-brand-goldLight/90 sm:text-xl"
+              >
+                &ldquo;{subtitle}&rdquo;
+              </motion.p>
+            ) : (
+              <motion.p
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="mt-5 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg"
+              >
+                {subtitle}
+              </motion.p>
+            ))}
         </div>
       </Container>
     </section>
