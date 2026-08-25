@@ -11,6 +11,8 @@ const seed = (name: string, w: number, h: number) =>
 
 export const images = {
   hero: seed("hero-prayer", 1400, 1200),
+  aboutHero: seed("about-city", 1600, 900),
+  aboutStory: seed("about-story", 900, 1100),
   events: {
     novena: seed("event-novena", 640, 480),
     trinity: seed("event-trinity", 640, 480),
