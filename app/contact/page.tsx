@@ -52,15 +52,7 @@ export default function ContactPage() {
             <div className="grid gap-10 lg:grid-cols-5 lg:gap-14">
               {/* Contact details */}
               <div className="lg:col-span-2">
-                <h2 className="font-serif text-2xl font-bold text-brand-ink">
-                  We would love to hear from you
-                </h2>
-                <p className="mt-3 text-brand-ink/70">
-                  Reach us through any of the channels below, or send a message
-                  using the form. Every prayer request is received with care.
-                </p>
-
-                <ul className="mt-8 space-y-5">
+                <ul className="space-y-5">
                   <ContactRow icon={Mail} label="Email">
                     <a
                       href={`mailto:${site.contact.email}`}
