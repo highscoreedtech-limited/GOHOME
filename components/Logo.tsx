@@ -26,7 +26,7 @@ export function Logo({
         width={1859}
         height={1470}
         priority
-        className="h-11 w-auto shrink-0 object-contain transition-transform group-hover:scale-105"
+        className="h-14 w-auto shrink-0 object-contain transition-transform group-hover:scale-105"
       />
       <span className="flex flex-col leading-none">
         <span className="font-serif text-base font-bold tracking-wide text-white sm:text-lg">

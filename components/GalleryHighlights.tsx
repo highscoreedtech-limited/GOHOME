@@ -10,8 +10,8 @@ import { galleryImages } from "@/data/work";
  */
 export function GalleryHighlights() {
   return (
-    <div className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:px-0 lg:grid-cols-3 lg:gap-5">
-      {galleryImages.slice(0, 3).map((img, i) => (
+    <div className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 lg:grid-cols-4 lg:gap-5">
+      {galleryImages.map((img, i) => (
         <motion.figure
           key={img.id}
           initial={{ opacity: 0, scale: 0.96 }}
@@ -24,7 +24,7 @@ export function GalleryHighlights() {
             src={img.src}
             alt={img.alt}
             fill
-            sizes="(max-width: 640px) 80vw, 33vw"
+            sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 25vw"
             className="object-cover transition-transform duration-500 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-brand-dark/0 transition-colors group-hover:bg-brand-dark/20" />

@@ -23,12 +23,11 @@ export const images = {
     destinyAngels: seed("msg-destiny-angels", 200, 160),
     powerOfPrayer: seed("msg-power-prayer", 200, 160),
   },
+  // Local gallery photos from /public (swap/add files here as more arrive).
   gallery: [
-    seed("gallery-1", 480, 360),
-    seed("gallery-2", 480, 360),
-    seed("gallery-3", 480, 360),
-    seed("gallery-4", 480, 360),
-    seed("gallery-5", 480, 360),
-    seed("gallery-6", 480, 360),
+    "/gallery-1.jpg",
+    "/gallery-2.jpg",
+    "/gallery-3.jpg",
+    "/gallery-4.jpg",
   ],
 } as const;
