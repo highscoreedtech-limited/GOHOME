@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import { Quote, ArrowRight } from "lucide-react";
 import { site } from "@/data/site";
 import { verses } from "@/data/verses";
@@ -49,21 +49,27 @@ export function DailyEncouragementCard({ className }: { className?: string }) {
 
       <Quote className="mt-4 h-7 w-7 text-brand-gold" aria-hidden="true" />
 
-      {/* aria-live so screen readers announce each new verse */}
-      <div className="mt-2 min-h-[120px]" aria-live="polite">
-        <motion.blockquote
-          key={index}
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-        >
-          <p className="text-[15px] italic leading-relaxed text-white/85">
-            &ldquo;{verse.quote}&rdquo;
-          </p>
-          <cite className="mt-3 block text-sm font-semibold not-italic text-brand-goldLight">
-            {verse.citation}
-          </cite>
-        </motion.blockquote>
+      {/* Cross-fade: both verses share one grid cell so the old fades out as
+          the new fades in (Windows-style), with no layout jump or clipping.
+          aria-live announces each new verse to screen readers. */}
+      <div className="mt-2 grid min-h-[120px]" aria-live="polite">
+        <AnimatePresence>
+          <motion.blockquote
+            key={index}
+            className="col-start-1 row-start-1"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.9, ease: "easeInOut" }}
+          >
+            <p className="text-[15px] italic leading-relaxed text-white/85">
+              &ldquo;{verse.quote}&rdquo;
+            </p>
+            <cite className="mt-3 block text-sm font-semibold not-italic text-brand-goldLight">
+              {verse.citation}
+            </cite>
+          </motion.blockquote>
+        </AnimatePresence>
       </div>
 
       {/* Dot indicators */}
