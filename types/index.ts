@@ -105,3 +105,40 @@ export interface ReadingRecord {
   progress: number; // 0..1
   updatedAt: number; // epoch ms
 }
+
+/* ------------------------------------------------------------------ *
+ * Events calendar
+ * ------------------------------------------------------------------ */
+
+export type EventCategory =
+  | "Prayer"
+  | "Worship"
+  | "Outreach"
+  | "Novena"
+  | "Feast"
+  | "Seminar";
+
+/**
+ * A calendar event. Exactly one scheduling shape should be set:
+ *  - `date`            a single day ("YYYY-MM-DD")
+ *  - `start` + `end`   an inclusive multi-day range (e.g. a novena)
+ *  - `weekday`         a weekly recurring event (0=Sun ... 6=Sat)
+ */
+export interface CalendarEvent {
+  id: string;
+  title: string;
+  category: EventCategory;
+  time?: string;
+  location?: string;
+  description?: string;
+  date?: string;
+  start?: string;
+  end?: string;
+  weekday?: number;
+}
+
+/** A concrete occurrence of an event on a specific day. */
+export interface EventOccurrence {
+  date: string; // "YYYY-MM-DD"
+  event: CalendarEvent;
+}

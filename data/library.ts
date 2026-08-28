@@ -251,6 +251,96 @@ Holy, holy, holy! Is the Lord!
 "All your efforts, your thoughts, your soul, and your spirit, everywhere you go, you speak and engage, and at the end of the day the Holy Spirit may say, because of certain things, I will not allow you to exercise authority over a particular dimension of divinity. What a calamity! Because of human nature that you refuse to control."`,
   },
   {
+    id: "glory-of-virginity",
+    title: "The Glory of Virginity",
+    author: "The Holy Spirit",
+    category: "Christian Living",
+    description:
+      "The Holy Spirit speaks on the great glory and favours that accompany virginity, the call to hold firm to purity before marriage, and faithfulness within the home. Given at the New Jerusalem, Enugu, on 11 November 2015.",
+    tags: ["virginity", "purity", "marriage", "holy spirit", "youth"],
+    coverImage: "/holy-spirit-cover.png",
+    estimatedReadingTime: "7 min read",
+    publishedAt: "2015-11-11",
+    chapters: [
+      {
+        id: "the-pride-of-virginity",
+        title: "The Pride of Virginity",
+        content: `The Holy Spirit said:
+
+"I am addressing the young ones. Tell them: 'If you wish to have it well in your life, put on the pride of virginity.' Do not listen to those who tell you, 'Virginity is old-fashioned.' This is the terror of the demons, the terrifying word of the demons.
+
+"You are crying out that terrorism is taking over the world and that there are terrorist attacks. This one, the loss of your virginity, is the terrorist attack of the demonic fraternities against humanity!
+
+"Virginity is the beginning; the grave is the ending. Do you hear Me?"
+
+"Yes, my Lord," we answered.
+
+The Holy Spirit continued:
+
+"When you suffer with your virginity and die as a virgin, do you know the level of glory that is awaiting you in Heaven? Can you speak about the glory of the Blessed Mother of Jesus? Who can talk about Her glory?"
+
+We kept quiet because we did not have an answer.
+
+He continued:
+
+"Why did We choose a virgin to bring forth Salvation to you?"
+
+Again, we remained silent because we did not know the answer.
+
+The Holy Spirit said:
+
+"How do you expect Us to choose a womb that has been soiled and defiled? Children, if We had done that, then We would no longer be God!
+
+"Priceless virginity is the power to succeed. Put all your effort into seeking the things of God, for Heaven is much more important."`,
+      },
+      {
+        id: "virginity-and-marriage",
+        title: "Virginity and the Vocation of Marriage",
+        content: `The teaching continued by addressing the responsibilities of those who enter into marriage and the importance of faithfulness, family life, and responsibility within the home.
+
+The Holy Spirit said:
+
+"The second people of virginity are women who marry but who are not notorious threats in the homes of their husbands. In your world today, they are one out of millions.
+
+"This type of woman has neglected the works she is supposed to do and is chasing after the god of mammon. I have said it before: give them better things to do so that they can focus on the family they were given, so that when procreation takes place, they will be able to take care of the home, while the husband provides for the family, to balance the equation.
+
+"But the evil one refuses to allow it to be like that. He wants it the other way around because he knows that women were given great responsibility in caring for the home.
+
+"Some women surrender their keys to the dragon in their quest to achieve material success quickly in life.
+
+"Some of them will say, 'My husband is a culprit. He has chains of girlfriends and women friends, committing endless acts of adultery. Why must I stay home and look at his face? No! I myself must also go and look for my own male friends who will give me everything I want.'
+
+"Can two wrongs make a right?"
+
+"No!" we answered.
+
+The Holy Spirit continued:
+
+"Women, you are meant to be the head even though you are weak. This is what the evil one wants to exploit. He moves cunningly to introduce lustful desires into the hearts of many women, simply to destroy them and accomplish his desired destruction of the structure of the home.
+
+"How much will he give you that will make you stop looking for more? Even if he gives you a house and gives you a car, when you leave this world, will you take any of those things to Heaven?"
+
+"No, my Lord," we answered.`,
+      },
+      {
+        id: "the-call-to-purity",
+        title: "The Great Call to Purity and Faithfulness",
+        content: `The central message of this teaching is a call to young people to value purity, preserve virginity before marriage, and recognise that material possessions and worldly pleasures are temporary.
+
+Young people are encouraged not to allow the opinions of society to diminish the value they place on chastity and moral discipline. Parents are likewise encouraged to teach their children the dignity of purity and to help them understand that their spiritual lives are more important than temporary worldly pleasures.
+
+Marriage, in turn, should be approached with responsibility, fidelity, mutual respect, sacrifice, and a sincere commitment to God and family.`,
+      },
+      {
+        id: "the-new-jerusalem",
+        title: "The New Jerusalem",
+        content: `The New Jerusalem, as prophesied in Revelation 21:1-4, has been manifested by Heaven in the Roman Catholic Church, from the heart of Petrus (Peter), the foundation stone of our Christian faith established by Jesus Christ, in Enugu, East of Nigeria, under the leadership of three chosen Reverend Fathers as spiritual directors.
+
+Enter the Ark of the New Jerusalem now! Do not be left out, as in the days of Noah!`,
+      },
+    ],
+  },
+  {
     id: "destiny-angels",
     title: "Destiny Angels",
     author: "Holy Archangel Sheila",
