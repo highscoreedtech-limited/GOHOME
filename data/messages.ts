@@ -8,8 +8,24 @@ import {
 import type { MessageItem, QuickLink } from "@/types";
 import { images } from "./images";
 
-/** Latest messages list. */
+/**
+ * Latest messages shown on the home page.
+ *
+ * Hand-curated for now (frontend-only). Once the admin panel + backend land,
+ * this becomes a query for the most recently published messages
+ * (see docs/BACKEND.md "Auto-surfacing new uploads"), so new uploads appear
+ * here automatically.
+ */
 export const latestMessages: MessageItem[] = [
+  {
+    id: "glory-of-virginity",
+    title: "The Glory of Virginity",
+    excerpt:
+      "If you wish to have it well in your life, put on the pride of virginity...",
+    date: "Nov 11, 2015",
+    image: "/glory-of-virginity-cover.png",
+    href: "/messages/glory-of-virginity",
+  },
   {
     id: "do-no-aggrieve",
     title: "Do Not Aggrieve the Holy Spirit",

@@ -135,6 +135,38 @@ No component markup changes.
 2. **Phase 2, admin/auth.** Let the ministry publish messages and events themselves.
 3. **Phase 3, accounts (optional).** Sync reading progress and bookmarks across devices; until then `localStorage` is fine and honest.
 
+## Auto-surfacing new uploads (Latest Messages)
+
+Today the home "Latest Messages" list is a hand-curated array in
+`data/messages.ts`. To make it update automatically whenever a message is
+uploaded from the admin panel, do NOT keep a second hand-maintained list:
+
+1. **Make it data-driven.** "Latest" is just a query: the N most recently
+   published messages, ordered by `publishedAt` descending.
+   `GET /api/messages?sort=publishedAt&order=desc&limit=4`. The home renders
+   whatever that returns, so a new upload appears with zero code changes.
+   (The same helper can live in `lib/library.ts` as `getLatestMessages(limit)`
+   over local data until the API exists.)
+
+2. **Keep it fresh.** Three options, cheapest first:
+   - **On-demand revalidation (recommended).** When the admin publishes, the
+     backend calls a Next.js revalidation hook (`revalidateTag("messages")` or
+     `revalidatePath("/")`). The home is statically cached for speed but the
+     new message shows within seconds, no redeploy. This is the right balance
+     for a ministry site.
+   - **Time-based ISR.** `export const revalidate = 60` on the home so it
+     re-fetches at most once a minute. Simplest, slight delay.
+   - **Live push (SSE / WebSocket).** For the message to truly "pop up" on an
+     already-open page without a refresh, the server pushes a `message.created`
+     event and the client prepends it. This is real-time but adds moving parts;
+     usually unnecessary here. Reserve it for something genuinely live.
+
+3. **Optional polish.** A small "New" badge on items published within the last
+   few days, and a gentle enter animation (Framer) when the list changes.
+
+Recommendation: data-driven list + on-demand revalidation on publish. It gives
+"new messages appear automatically" without the cost and complexity of sockets.
+
 ## What NOT to do
 
 - No ORM-heavy framework or microservices for a site this size, one modular monolith.
