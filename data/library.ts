@@ -258,7 +258,7 @@ Holy, holy, holy! Is the Lord!
     description:
       "The Holy Spirit speaks on the great glory and favours that accompany virginity, the call to hold firm to purity before marriage, and faithfulness within the home. Given at the New Jerusalem, Enugu, on 11 November 2015.",
     tags: ["virginity", "purity", "marriage", "holy spirit", "youth"],
-    coverImage: "/holy-spirit-cover.png",
+    coverImage: "/glory-of-virginity-cover.png",
     estimatedReadingTime: "7 min read",
     publishedAt: "2015-11-11",
     chapters: [
