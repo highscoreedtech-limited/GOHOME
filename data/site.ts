@@ -5,13 +5,11 @@ export const site = {
   description:
     "A community of faith devoted to prayers, works of mercy, and living out purpose together.",
   hero: {
-    eyebrow: "You Are Not Alone",
-    title: "Never run the race all alone",
-    body: [
-      "Join us in our weekly, monthly and daily charity works. You can also join our prayer and weekly activities.",
-      "Never be left alone. Strengthen yourself with prayers and works of mercy.",
-    ],
-    cta: { label: "Learn More About Us", href: "/about" },
+    eyebrow:
+      "Government of Heaven Outreach Mission Evangelism of the New Jerusalem City",
+    title: "GOHOME of the New Jerusalem City",
+    body: [] as string[],
+    cta: { label: "Know More", href: "/about" },
   },
   encouragement: {
     heading: "Daily Encouragement",

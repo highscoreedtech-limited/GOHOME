@@ -46,7 +46,7 @@ export function Hero({ showQuoteCard = true }: { showQuoteCard?: boolean }) {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="eyebrow"
+              className="max-w-2xl font-serif text-base font-medium leading-snug tracking-wide text-brand-goldLight sm:text-lg"
             >
               {eyebrow}
             </motion.p>
@@ -67,16 +67,18 @@ export function Hero({ showQuoteCard = true }: { showQuoteCard?: boolean }) {
               className="mt-6 h-0.5 w-16 rounded-full bg-brand-gold"
             />
 
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="mt-6 max-w-lg space-y-4 text-base leading-relaxed text-white/80 sm:text-lg"
-            >
-              {body.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </motion.div>
+            {body.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="mt-6 max-w-lg space-y-4 text-base leading-relaxed text-white/80 sm:text-lg"
+              >
+                {body.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </motion.div>
+            )}
 
             <motion.div
               initial={{ opacity: 0, y: 16 }}
