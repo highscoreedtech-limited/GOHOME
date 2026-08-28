@@ -12,7 +12,7 @@ import { galleryImages } from "@/data/work";
 export function GalleryHighlights() {
   return (
     <div className="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 sm:mx-0 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 lg:grid-cols-4 lg:gap-5">
-      {galleryImages.map((img, i) => (
+      {galleryImages.slice(0, 4).map((img, i) => (
         <motion.figure
           key={img.id}
           initial={{ opacity: 0, scale: 0.96 }}

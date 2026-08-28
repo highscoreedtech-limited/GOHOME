@@ -30,9 +30,11 @@ export const site = {
     body: "We are committed to prayers, charity works and building a community of faith and purpose.",
   },
   contact: {
-    email: "hello@newjerusalemcity.org",
-    phone: "+234 800 000 0000",
-    address: "New Jerusalem City Center, Lagos, Nigeria",
+    email: "suppertableofnewjerusalemcity@gmail.com",
+    phone: "+234 803 337 4746",
+    phoneAlt: "+234 810 829 9295",
+    address: "1 Chukwuma Azide, Enugu, Nigeria.",
+    hours: ["Mon to Fri: 9AM to 5PM (WAT)", "Sat: 10AM to 1PM (WAT)"],
   },
   social: {
     facebook: "#",

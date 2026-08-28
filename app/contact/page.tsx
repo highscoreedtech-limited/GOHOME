@@ -4,6 +4,7 @@ import {
   Mail,
   Phone,
   MapPin,
+  Clock,
   Facebook,
   Instagram,
   Youtube,
@@ -63,21 +64,36 @@ export default function ContactPage() {
                   <ContactRow icon={Mail} label="Email">
                     <a
                       href={`mailto:${site.contact.email}`}
-                      className="transition-colors hover:text-brand-gold"
+                      className="break-all transition-colors hover:text-brand-gold"
                     >
                       {site.contact.email}
                     </a>
                   </ContactRow>
                   <ContactRow icon={Phone} label="Phone">
-                    <a
-                      href={`tel:${site.contact.phone.replace(/\s/g, "")}`}
-                      className="transition-colors hover:text-brand-gold"
-                    >
-                      {site.contact.phone}
-                    </a>
+                    <span className="flex flex-col">
+                      <a
+                        href={`tel:${site.contact.phone.replace(/\s/g, "")}`}
+                        className="transition-colors hover:text-brand-gold"
+                      >
+                        {site.contact.phone}
+                      </a>
+                      <a
+                        href={`tel:${site.contact.phoneAlt.replace(/\s/g, "")}`}
+                        className="transition-colors hover:text-brand-gold"
+                      >
+                        {site.contact.phoneAlt}
+                      </a>
+                    </span>
                   </ContactRow>
                   <ContactRow icon={MapPin} label="Address">
                     {site.contact.address}
+                  </ContactRow>
+                  <ContactRow icon={Clock} label="Opening Hours">
+                    <span className="flex flex-col">
+                      {site.contact.hours.map((line) => (
+                        <span key={line}>{line}</span>
+                      ))}
+                    </span>
                   </ContactRow>
                 </ul>
 

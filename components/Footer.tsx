@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Youtube, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Instagram, Youtube, Twitter, Mail, Phone, MapPin, Clock } from "lucide-react";
 import { site } from "@/data/site";
 import { navItems } from "@/data/nav";
 import { quickLinks } from "@/data/messages";
@@ -86,23 +86,39 @@ export function Footer() {
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-brand-gold" />
                 <span>{site.contact.address}</span>
               </li>
-              <li className="flex items-center gap-2.5">
-                <Phone className="h-4 w-4 shrink-0 text-brand-gold" />
-                <a
-                  href={`tel:${site.contact.phone.replace(/\s/g, "")}`}
-                  className="transition-colors hover:text-brand-goldLight"
-                >
-                  {site.contact.phone}
-                </a>
+              <li className="flex items-start gap-2.5">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-brand-gold" />
+                <span className="flex flex-col">
+                  <a
+                    href={`tel:${site.contact.phone.replace(/\s/g, "")}`}
+                    className="transition-colors hover:text-brand-goldLight"
+                  >
+                    {site.contact.phone}
+                  </a>
+                  <a
+                    href={`tel:${site.contact.phoneAlt.replace(/\s/g, "")}`}
+                    className="transition-colors hover:text-brand-goldLight"
+                  >
+                    {site.contact.phoneAlt}
+                  </a>
+                </span>
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 shrink-0 text-brand-gold" />
                 <a
                   href={`mailto:${site.contact.email}`}
-                  className="transition-colors hover:text-brand-goldLight"
+                  className="break-all transition-colors hover:text-brand-goldLight"
                 >
                   {site.contact.email}
                 </a>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand-gold" />
+                <span className="flex flex-col">
+                  {site.contact.hours.map((line) => (
+                    <span key={line}>{line}</span>
+                  ))}
+                </span>
               </li>
             </ul>
           </div>
