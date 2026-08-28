@@ -20,6 +20,7 @@ import (
 	"newjerusalem/internal/event"
 	"newjerusalem/internal/httpx"
 	"newjerusalem/internal/message"
+	"newjerusalem/internal/platform/postgres"
 )
 
 func main() {
@@ -29,19 +30,37 @@ func main() {
 	logger := slog.New(slog.NewJSONHandler(os.Stdout, nil))
 
 	// ---- Composition root -------------------------------------------------
-	// This is the ONE place that knows the concrete types. We build each
-	// layer and inject dependencies downward: repo -> service -> handler.
-	// To move to Postgres later, swap NewInMemoryRepository() for a Postgres
-	// repository here; nothing else changes.
-	messageHandler := message.NewHandler(
-		message.NewService(message.NewInMemoryRepository()),
+	// This is the ONE place that knows the concrete types. We choose the
+	// storage implementation here based on config; because both satisfy the
+	// same Repository interfaces, the services and handlers are identical
+	// either way. THIS is the whole payoff of the interface seam.
+	var (
+		messageRepo message.Repository
+		eventRepo   event.Repository
+		contactRepo contact.Repository
 	)
-	eventHandler := event.NewHandler(
-		event.NewService(event.NewInMemoryRepository()),
-	)
-	contactHandler := contact.NewHandler(
-		contact.NewService(contact.NewInMemoryRepository(), logger),
-	)
+
+	if cfg.DatabaseURL != "" {
+		pool, err := postgres.NewPool(context.Background(), cfg.DatabaseURL)
+		if err != nil {
+			logger.Error("database connection failed", "error", err)
+			os.Exit(1)
+		}
+		defer pool.Close()
+		messageRepo = message.NewPostgresRepository(pool)
+		eventRepo = event.NewPostgresRepository(pool)
+		contactRepo = contact.NewPostgresRepository(pool)
+		logger.Info("storage: postgres")
+	} else {
+		messageRepo = message.NewInMemoryRepository()
+		eventRepo = event.NewInMemoryRepository()
+		contactRepo = contact.NewInMemoryRepository()
+		logger.Info("storage: in-memory (set DATABASE_URL to use postgres)")
+	}
+
+	messageHandler := message.NewHandler(message.NewService(messageRepo))
+	eventHandler := event.NewHandler(event.NewService(eventRepo))
+	contactHandler := contact.NewHandler(contact.NewService(contactRepo, logger))
 
 	// ---- Routes -----------------------------------------------------------
 	// The pattern "GET /api/messages/{id}" is method + path with a named

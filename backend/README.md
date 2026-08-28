@@ -28,6 +28,33 @@ Stop with `Ctrl+C` (the server drains in-flight requests, then exits).
 Config via env vars (with defaults): `PORT` (8080), `ALLOWED_ORIGIN`
 (http://localhost:3000).
 
+## Run with Postgres (optional)
+
+By default the app uses an in-memory store. Set `DATABASE_URL` to use Postgres
+instead; the same interfaces mean nothing else changes.
+
+```bash
+# 1. Start Postgres (Docker example)
+docker run --name njc-pg -e POSTGRES_PASSWORD=pass -e POSTGRES_DB=njc -p 5432:5432 -d postgres:16
+
+# 2. Apply the schema + seed (needs the golang-migrate CLI)
+export DATABASE_URL="postgres://postgres:pass@localhost:5432/njc?sslmode=disable"
+migrate -database "$DATABASE_URL" -path migrations up
+
+# 3. Run the API against Postgres
+DATABASE_URL="$DATABASE_URL" go run ./cmd/api
+```
+
+The log line `storage: postgres` confirms it connected. SQL lives in
+`migrations/` (`0001_init` schema, `0002_seed` starter rows).
+
+## Connecting the frontend
+
+The Next.js app has a typed client at `../lib/api.ts`, gated by
+`NEXT_PUBLIC_API_URL`. Set it (see `../.env.example`) to point the contact form
+at `POST /api/contact`; unset, the form falls back to `mailto`. Nothing else in
+the UI changes.
+
 ## Endpoints
 
 | Method | Path                    | Purpose                                  |

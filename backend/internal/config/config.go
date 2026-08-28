@@ -17,6 +17,7 @@ import "os"
 type Config struct {
 	Port          string
 	AllowedOrigin string // the frontend origin allowed to call us (CORS)
+	DatabaseURL   string // Postgres DSN; empty means "use the in-memory store"
 }
 
 // Load reads configuration, falling back to sensible defaults for local dev.
@@ -27,6 +28,7 @@ func Load() Config {
 	return Config{
 		Port:          env("PORT", "8080"),
 		AllowedOrigin: env("ALLOWED_ORIGIN", "http://localhost:3000"),
+		DatabaseURL:   env("DATABASE_URL", ""),
 	}
 }
 
