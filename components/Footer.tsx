@@ -13,7 +13,7 @@ const socials = [
   { label: "Twitter", href: site.social.twitter, icon: Twitter },
 ];
 
-/** Site footer — dark, four columns, social row, contact info, copyright. */
+/** Site footer, dark, four columns, social row, contact info, copyright. */
 export function Footer() {
   const year = new Date().getFullYear();
   const primaryLinks = navItems.filter((i) => !i.children).slice(0, 6);

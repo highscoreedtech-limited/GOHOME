@@ -57,7 +57,7 @@ export function LibraryCard({ item }: { item: LibraryItem }) {
           {item.description}
         </p>
 
-        {/* Optional metadata — only render fields that exist */}
+        {/* Optional metadata, only render fields that exist */}
         {(item.estimatedReadingTime || item.pages || chapterCount > 0) && (
           <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-brand-muted">
             {item.estimatedReadingTime && (

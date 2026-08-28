@@ -101,7 +101,7 @@ export default function MessageDetailsPage({
               </h1>
               <p className="mt-2 text-brand-muted">by {item.author}</p>
 
-              {/* Optional metadata — only present fields */}
+              {/* Optional metadata, only present fields */}
               {(item.estimatedReadingTime || item.pages || chaptered) && (
                 <div className="mt-5 flex flex-wrap items-center gap-4 text-sm text-brand-ink/70">
                   {item.estimatedReadingTime && (

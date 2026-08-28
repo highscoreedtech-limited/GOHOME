@@ -18,7 +18,7 @@ export function Logo({
     <Link
       href="/"
       className={cn("group inline-flex items-center gap-2.5", className)}
-      aria-label={`${site.name} — home`}
+      aria-label={`${site.name}, home`}
     >
       <Image
         src="/nj-logo.png"

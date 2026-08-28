@@ -119,7 +119,7 @@ export default function AboutPage() {
         <section className="bg-brand-creamAlt py-16 sm:py-20">
           <Container>
             <div className="grid gap-6 md:grid-cols-2">
-              {/* Owner — dark card */}
+              {/* Owner, dark card */}
               <Reveal>
                 <div className="flex h-full flex-col justify-center rounded-2xl bg-brand-dark p-8 shadow-card sm:p-10">
                   <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-brand-gold/15 text-brand-goldLight">
@@ -139,7 +139,7 @@ export default function AboutPage() {
                 </div>
               </Reveal>
 
-              {/* Motto — gold-accented card */}
+              {/* Motto, gold-accented card */}
               <Reveal delay={0.1}>
                 <div className="flex h-full flex-col justify-center rounded-2xl border border-brand-gold/30 bg-white p-8 shadow-card sm:p-10">
                   <Quote className="h-8 w-8 text-brand-gold" aria-hidden="true" />
@@ -149,7 +149,7 @@ export default function AboutPage() {
                       {about.motto.quote}
                     </p>
                     <cite className="mt-4 block text-sm font-semibold not-italic text-brand-gold">
-                      — {about.motto.note}
+                      {about.motto.note}
                     </cite>
                   </blockquote>
                 </div>
@@ -158,7 +158,7 @@ export default function AboutPage() {
           </Container>
         </section>
 
-        {/* Membership Requirements — three-pronged covenant */}
+        {/* Membership Requirements, three-pronged covenant */}
         <section className="bg-brand-cream py-16 sm:py-20 lg:py-24">
           <Container>
             <Reveal className="mx-auto max-w-2xl text-center">
@@ -241,7 +241,7 @@ export default function AboutPage() {
           </Container>
         </section>
 
-        {/* Closing CTA — Enter the Ark */}
+        {/* Closing CTA, Enter the Ark */}
         <section className="relative overflow-hidden bg-brand-gold py-20 sm:py-24">
           <Ship
             aria-hidden="true"

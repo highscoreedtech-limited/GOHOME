@@ -5,8 +5,8 @@ import { libraryItems, CATEGORIES } from "@/data/library";
  * Data-access layer for the Messages Library.
  *
  * The UI imports ONLY from here (never from `data/library` directly), so the
- * local array can later be replaced by an API/DB call — make these functions
- * async and swap the body — without changing any component.
+ * local array can later be replaced by an API/DB call, make these functions
+ * async and swap the body, without changing any component.
  */
 
 export { CATEGORIES };

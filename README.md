@@ -1,17 +1,17 @@
 # New Jerusalem City
 
 A production-grade, fully responsive marketing site for the fictional church/ministry
-**New Jerusalem City** — _Prayers. Mercy. Purpose._ Built as a pixel-faithful rebuild
+**New Jerusalem City**, _Prayers. Mercy. Purpose._ Built as a pixel-faithful rebuild
 of the reference design.
 
 ## Tech stack
 
 - **Next.js 14** (App Router) + **TypeScript** (strict)
-- **Tailwind CSS 3** — design tokens live in [`tailwind.config.ts`](tailwind.config.ts)
-- **Framer Motion** — entrance, scroll-reveal, dropdown + card micro-interactions
-- **lucide-react** — all icons
-- **embla-carousel-react** — mobile/tablet events carousel
-- **clsx** + **tailwind-merge** — `cn()` class helper ([`lib/utils.ts`](lib/utils.ts))
+- **Tailwind CSS 3**, design tokens live in [`tailwind.config.ts`](tailwind.config.ts)
+- **Framer Motion**, entrance, scroll-reveal, dropdown + card micro-interactions
+- **lucide-react**, all icons
+- **embla-carousel-react**, mobile/tablet events carousel
+- **clsx** + **tailwind-merge**, `cn()` class helper ([`lib/utils.ts`](lib/utils.ts))
 
 ## Getting started
 
@@ -51,7 +51,7 @@ Fonts: **Playfair Display** (serif display) + **Inter** (sans UI), loaded via
 
 Every image is a placeholder from `picsum.photos`, referenced through
 [`data/images.ts`](data/images.ts). Replace the URLs there (or point them at
-files in `/public`) — no component markup needs to change.
+files in `/public`), no component markup needs to change.
 
 ## Accessibility
 

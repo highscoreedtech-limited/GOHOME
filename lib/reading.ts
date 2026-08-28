@@ -21,7 +21,7 @@ const KEYS = {
   prefs: "njc:reader-prefs",
 } as const;
 
-// Stable fallbacks — returning the SAME reference each call is required so
+// Stable fallbacks, returning the SAME reference each call is required so
 // useSyncExternalStore doesn't loop.
 const EMPTY_BOOKMARKS: string[] = [];
 const EMPTY_READING: Record<string, ReadingRecord> = {};
@@ -54,7 +54,7 @@ function write<T>(key: string, value: T) {
   try {
     window.localStorage.setItem(key, JSON.stringify(value));
   } catch {
-    /* storage unavailable / full — persistence is best-effort */
+    /* storage unavailable / full, persistence is best-effort */
   }
   notify();
 }

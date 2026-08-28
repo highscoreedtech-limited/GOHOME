@@ -530,7 +530,7 @@ function TocList({
 }
 
 /**
- * Memoized reading content — re-renders only when the text, chapter mode or
+ * Memoized reading content, re-renders only when the text, chapter mode or
  * font size changes, NOT on every scroll-driven progress update.
  */
 const ReaderContent = memo(function ReaderContent({

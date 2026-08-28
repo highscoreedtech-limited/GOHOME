@@ -34,7 +34,7 @@ export function DailyEncouragementCard({ className }: { className?: string }) {
           &ldquo;{quote}&rdquo;
         </p>
         <cite className="mt-3 block text-sm font-semibold not-italic text-brand-goldLight">
-          &ndash; {citation}
+          {citation}
         </cite>
       </blockquote>
 

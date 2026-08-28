@@ -10,7 +10,7 @@ import { images } from "@/data/images";
 export const metadata: Metadata = {
   title: "Gallery",
   description:
-    "Moments from the New Jerusalem City — worship, outreach, and community life in pictures.",
+    "Moments from the New Jerusalem City, worship, outreach, and community life in pictures.",
 };
 
 export default function GalleryPage() {
@@ -21,7 +21,7 @@ export default function GalleryPage() {
         <PageHero
           eyebrow="Moments"
           title="Gallery"
-          subtitle="Worship, outreach, and community life across the New Jerusalem City — captured in pictures."
+          subtitle="Worship, outreach, and community life across the New Jerusalem City, captured in pictures."
           subtitleStyle="plain"
           image={images.aboutHero}
           breadcrumb={[{ label: "Home", href: "/" }]}

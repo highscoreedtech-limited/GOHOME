@@ -108,7 +108,7 @@ export function MessagesLibrary() {
           <ContinueReading />
         </div>
 
-        {/* Featured — only in the default browse view */}
+        {/* Featured, only in the default browse view */}
         {isDefaultView && featured.length > 0 && (
           <section aria-label="Featured messages" className="mt-12">
             <Reveal>

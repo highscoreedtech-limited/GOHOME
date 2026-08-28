@@ -9,7 +9,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { BookCover } from "./BookCover";
 
 /**
- * "Continue Reading" rail — driven entirely by localStorage reading history.
+ * "Continue Reading" rail, driven entirely by localStorage reading history.
  * Renders nothing when there is no history (no empty section), so it's safe to
  * always mount at the top of the library.
  */

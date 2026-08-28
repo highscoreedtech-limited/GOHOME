@@ -14,7 +14,7 @@ export function generateMetadata({
 }): Metadata {
   const item = getItemById(params.id);
   return {
-    title: item ? `Reading — ${item.title}` : "Message not found",
+    title: item ? `Reading: ${item.title}` : "Message not found",
   };
 }
 

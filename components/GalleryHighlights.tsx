@@ -23,7 +23,7 @@ export function GalleryHighlights() {
         >
           <Link
             href="/gallery"
-            aria-label={`${img.alt} — open gallery`}
+            aria-label={`${img.alt}, open gallery`}
             className="absolute inset-0 z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold"
           >
             <Image
