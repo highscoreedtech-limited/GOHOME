@@ -63,39 +63,58 @@ export function MobileNav({
               </button>
             </div>
 
-            <nav className="mt-8 flex flex-col" aria-label="Mobile">
+            <motion.nav
+              className="mt-8 flex flex-col"
+              aria-label="Mobile"
+              variants={{
+                hidden: {},
+                show: { transition: { staggerChildren: 0.05, delayChildren: 0.1 } },
+              }}
+              initial="hidden"
+              animate="show"
+            >
               {items.map((item) => {
                 const hasChildren = !!item.children?.length;
                 const isOpen = expanded === item.label;
                 return (
-                  <div key={item.label} className="border-b border-white/5">
-                    <div className="flex items-center">
+                  <motion.div
+                    key={item.label}
+                    variants={{
+                      hidden: { opacity: 0, x: 24 },
+                      show: {
+                        opacity: 1,
+                        x: 0,
+                        transition: { duration: 0.28, ease: "easeOut" },
+                      },
+                    }}
+                    className="border-b border-white/5"
+                  >
+                    {/* Parent with children: whole row toggles the submenu.
+                        Leaf item: the row navigates. */}
+                    {hasChildren ? (
+                      <button
+                        type="button"
+                        onClick={() => setExpanded(isOpen ? null : item.label)}
+                        aria-expanded={isOpen}
+                        className="flex w-full items-center justify-between py-3.5 text-left text-base font-medium text-white/90 transition-colors hover:text-brand-goldLight"
+                      >
+                        {item.label}
+                        <ChevronDown
+                          className={cn(
+                            "h-5 w-5 shrink-0 text-white/60 transition-transform duration-200",
+                            isOpen && "rotate-180 text-brand-goldLight",
+                          )}
+                        />
+                      </button>
+                    ) : (
                       <Link
                         href={item.href}
                         onClick={onClose}
-                        className="flex-1 py-3.5 text-base font-medium text-white/90 hover:text-brand-goldLight"
+                        className="block py-3.5 text-base font-medium text-white/90 transition-colors hover:text-brand-goldLight"
                       >
                         {item.label}
                       </Link>
-                      {hasChildren && (
-                        <button
-                          type="button"
-                          onClick={() =>
-                            setExpanded(isOpen ? null : item.label)
-                          }
-                          aria-expanded={isOpen}
-                          aria-label={`Toggle ${item.label} submenu`}
-                          className="p-2 text-white/60"
-                        >
-                          <ChevronDown
-                            className={cn(
-                              "h-5 w-5 transition-transform",
-                              isOpen && "rotate-180",
-                            )}
-                          />
-                        </button>
-                      )}
-                    </div>
+                    )}
 
                     <AnimatePresence initial={false}>
                       {hasChildren && isOpen && (
@@ -103,27 +122,36 @@ export function MobileNav({
                           initial={{ height: 0, opacity: 0 }}
                           animate={{ height: "auto", opacity: 1 }}
                           exit={{ height: 0, opacity: 0 }}
-                          transition={{ duration: 0.2 }}
-                          className="overflow-hidden pb-2"
+                          transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
+                          className="overflow-hidden"
                         >
                           {item.children!.map((child) => (
                             <li key={child.label}>
                               <Link
                                 href={child.href}
                                 onClick={onClose}
-                                className="block py-2.5 pl-4 text-sm text-white/70 hover:text-brand-goldLight"
+                                className="block border-l border-white/10 py-2.5 pl-4 text-sm text-white/70 transition-colors hover:border-brand-gold hover:text-brand-goldLight"
                               >
                                 {child.label}
                               </Link>
                             </li>
                           ))}
+                          <li>
+                            <Link
+                              href={item.href}
+                              onClick={onClose}
+                              className="mb-1 block border-l border-white/10 py-2.5 pl-4 text-sm font-semibold text-brand-goldLight transition-colors hover:border-brand-gold"
+                            >
+                              View All {item.label}
+                            </Link>
+                          </li>
                         </motion.ul>
                       )}
                     </AnimatePresence>
-                  </div>
+                  </motion.div>
                 );
               })}
-            </nav>
+            </motion.nav>
 
             <div className="mt-8">
               <Button href="/join" size="lg" className="w-full" onClick={onClose}>
