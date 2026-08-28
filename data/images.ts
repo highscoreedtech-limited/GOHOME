@@ -15,7 +15,7 @@ export const images = {
   aboutStory: seed("about-story", 900, 1100),
   events: {
     novena: seed("event-novena", 640, 480),
-    trinity: seed("event-trinity", 640, 480),
+    trinity: "/Holy-Trinity.jpg",
     seminar: seed("event-seminar", 640, 480),
   },
   messages: {
