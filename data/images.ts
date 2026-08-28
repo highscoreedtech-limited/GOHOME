@@ -19,8 +19,8 @@ export const images = {
     seminar: seed("event-seminar", 640, 480),
   },
   messages: {
-    holySpirit: seed("msg-holy-spirit", 200, 160),
-    destinyAngels: seed("msg-destiny-angels", 200, 160),
+    holySpirit: "/holy-spirit-cover.png",
+    destinyAngels: "/destiny-angels-cover.png",
     powerOfPrayer: seed("msg-power-prayer", 200, 160),
   },
   // Local gallery photos from /public (swap/add files here as more arrive).

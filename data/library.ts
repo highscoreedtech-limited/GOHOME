@@ -176,7 +176,7 @@ export const libraryItems: LibraryItem[] = [
   {
     id: "do-no-aggrieve",
     title: "Do Not Aggrieve the Holy Spirit",
-    author: "Princess Vivian Mary Peace",
+    author: "Holy Archangel Sheila",
     category: "Christian Living",
     description:
       "A prophetic word from Holy Archangel Sheila on silence and subordination, the Blood and the mercy of God, the Blessed Virgin, and the account each of us must give before the Government of Heaven.",
@@ -253,16 +253,97 @@ Holy, holy, holy! Is the Lord!
   {
     id: "destiny-angels",
     title: "Destiny Angels",
-    author: "New Jerusalem City",
+    author: "Holy Archangel Sheila",
     category: "Faith",
     description:
-      "Your guardian angel will never let go, a message on the unseen help Heaven sends to guard your calling.",
-    tags: ["angels", "protection", "destiny"],
-    coverImage: cover("destiny-angels"),
-    estimatedReadingTime: "5 min read",
+      "A prophetic word from Holy Archangel Sheila on the record-keeping angels of destiny, the war with Lucifer, Michael the defender, and the coming Book of the Joyful Constellations.",
+    tags: ["angels", "destiny", "prophecy", "obedience"],
+    coverImage: "/destiny-angels-cover.png",
+    estimatedReadingTime: "13 min read",
     publishedAt: "2024-05-12",
-    content:
-      "Your guardian angel will never let go. Even when the fight is fierce and you feel yourself slipping, Heaven has assigned help to your side that does not tire and does not retreat.\n\nWe were never meant to walk our destinies alone. From the moment God set a purpose over your life, He also set watchers over your path, messengers who war for the calling you sometimes forget you carry.\n\nThis is not a reason for fear but for courage. The battles you face are real, but so is the help. When you pray, you are not shouting into an empty sky; you are calling on a Kingdom that answers.\n\nSo lift your head. Keep walking. The One who began a good work in you has not left you undefended, and He will bring it to completion.",
+    chapters: [
+      {
+        id: "abandoning-your-angel",
+        title: "Abandoning Your Angel",
+        content: `Aha! I have seen many people abandon their Angels to go and do their own thing, their own way. God is not liable; Judgement Day is a day of recompensation (reimbursement, payment). On that day, you don't have anything to say because you already know what you have done yourself.
+
+It is not easy. Some of the destiny Angels will move to, maybe you have eighty kilometres to go before you fulfill your mission, you move forty, the next thing, you drag your feet because you do not want to go further. You say, 'It is too tedious,' and your destiny Angel will be telling you, 'Please, please,' and you say, 'No,' because the other road is waiting for you. 'Go, go, go,' and somebody makes a suggestion, fiam! you join the person because you want to make money. They will go and do rituals for you to become rich, and this is what you call different, different slogans of your commitment, because you want the god of mammon, and the god of mammon confuses you and the energy of your destiny is jeopardized. That is the reason.`,
+      },
+      {
+        id: "record-angels",
+        title: "Destiny Angels Are Record Angels",
+        content: `Your guardian Angel will never let go. He will keep fighting even at that level of your death to see that any chance given is used, because if he comes back to God, God will ask him terrible questions. And if the questions are not well answered, because your Angel could be giving a destiny report about you: from the time you received your first salvation, what did you do? What was your commitment? Your family, the day you were born, your growth, your school, your movement, what was your contribution in your environment? How did you grow? Was there a time somebody came to speak to you about Jesus? What was the reaction? What have you gained out of it? Did you say, 'This man, get out, what are you talking about? I don't want to know Jesus.'? Every record will be written down on your behalf. Are you listening to me? There will be records.
+
+He spoke in Igbo language and said, "ndi kachasi ede record, I ma ndi kachasi ede record? Angels of destiny, they don't joke with records. Even, okwu o na agwa ndi mmadu, nke o na edeputa n'obi gi, ozigbo o na eche ya, odego ya ozigbo, because he does not want to have problem with God. When he goes back to God, he will give the report; if he says, 'God, You told me to tell him; I told him but he did not listen,' he will take note of the time, he will show God the time and say, this was the time I told him in the earthly world, 12 pm, when he was eating, I spoke to him, I even brought somebody to talk to him, I called a child to speak to him, I even called his mother to speak to him and I even called his friend, but he refused to listen. Look at the period, look at everything, 'ha kakwa edekwa gini?' Record."`,
+      },
+      {
+        id: "lucifer-and-his-agents",
+        title: "Lucifer and His Agents",
+        content: `He spoke in a strange language and remarked, "When you people call the name 'queen of the coast,' where do you think the name is from? Why are you so much afraid of mundane things that lucifer tried to show with fear and make you people afraid? Do you know the greatest thing you are afraid of on earth? Can you tell me the greatest thing you can be afraid of? (2 times). If you have your God as a habitat, there is something you should be much afraid of: 'Sin,' that is what you should be afraid of, and especially the sin of what? Disobedience."
+
+He spoke in a strange language. Aha! That sin is a 'wahala' o o, ha!
+
+He spoke in a strange language and then said in English language, "That is what lucifer is going through now, and he cannot come back to God, but we are all busy moving around God's presence. Every Angel that comes in contact with lucifer, do you know what lucifer will tell him? Bow or I slaughter (2 times)! That was what he was doing then, but what happens now? I have a mark on me, and that mark is the spiritual identity of who I am serving, and that is the mark of the Master."
+
+He spoke in a strange language and continued, "Whenever he sees me, I just stand before him and say, bow or I slaughter."
+
+He spoke again in a strange language and said in English language, "And he will not talk, he will 'vamus' (vanish); but if it were before, ah!"
+
+He spoke again in a strange language and continued in English language, "Many Angels suffered oo, suffered. If you are moving on God's mission, you have to be careful. We call him the 'Beluliat.' Every Angel will be asking every minute, did you meet him? (3 times) This is a sorrow he brought to heavenly government."`,
+      },
+      {
+        id: "michael-the-defender",
+        title: "Michael the Defender",
+        content: `It was Michael that was defending. In fact, as soon as you call Michael, Michael will appear, and you will keep on going on your mission, and Michael will settle the score with Lucifer. Maybe, by the time you will be coming back from your mission, the scores have not been settled, they are still fighting, but he has given you way to carry out God's decision.
+
+He spoke in a strange language and continued in English language, "Didn't you see the story in the book of Daniel? Dan. 10:13. And it is for your (human) sake that we (Angels) were all suffering. I don't know what God sees in you, He loves you very much and you are all mesmerizing Him. Why? He loves you so much; even now, God is crying about humanity. He will be asking, have you seen My son, Innocent? Have you seen My daughter, Clementina? Have you seen this person? This is how He will keep searching and searching."`,
+      },
+      {
+        id: "fate-of-angels",
+        title: "The Fate of Angels",
+        content: `Archangel Sheila bemoaned, "Woe unto Angels that left and just go like that! An Angel that will be sleeping in his duty, and when everything was checked and he was found guilty, the Angel will be taken to the guardroom. Do you know the meaning of guardroom? This is a place where God takes Angels that did not do their work, though they were not disobedient. If you talk about disobedience, you are vanishing eternally. Yes, if you are talking about not accomplishing one's duty because a soul is lost, you will suffer o (2 times); but when you talk about being disobedient, you are vanishing, 'adi-ekwu ya ekwu.'"`,
+      },
+      {
+        id: "the-patience-of-god",
+        title: "The Patience of God Upon Man",
+        content: `You, man, when you commit the sin of disobedience, God still gives you a later time to see if you can rebuild your constituency, because each human being is a constituency of its own. The way God sees you is not the way God sees us (the Angels). We are all obedient servants, but in your own case, you are a family member (a child). You have the right to tell me, 'Vanish, go,' and I will go if you have merited God's level. That was why during the time of Abraham, didn't you see how He treated Abraham? Any country Abraham entered, ha, all eyes were watching him.
+
+Holy Archangel Sheila spoke in a strange language and recounted, "Every principality in the arena would become faithful to him, they would be serving him, they would not even touch anything around him, because if you did, you will be in trouble. In the physical, God made sure that everything was working well for Abraham except the one He commanded, 'Abraham, you are going to go through this for My sake.'"
+
+Holy, holy, holy! Is the Lord!
+
+There is no other God! Except Jesus Christ!
+
+Jesus Christ of Nazareth is the Lord! Forever and ever!`,
+      },
+      {
+        id: "angels-do-not-greet",
+        title: "Angels Do Not Greet Like Human Beings",
+        content: `But it does not matter to us, we are the Angels, we are spirits. Me, greeting? The only way I can greet you is when you are very, very subordinate to things of God. When God told Holy Archangel Gabriel to go and visit Mary, did Gabriel just go? God told him to go to the house of so, so place, 'you will meet My damsel, greet Her that I am on My way.' It is His own body. Is She not God's body? It is just like, 'I have finished building my house, members o, neighbours o, friends o, I am calling you to come and help me do the dedication, do the house opening, it is time for me to enter my house.' Are you not a thief when you are not the owner of the house?
+
+He spoke in a strange language and continued in English language, "If you are a thief, they will chain you because you are not the owner of the house. This is the way it is with God. When Gabriel was commanded by God," he spoke in a strange language, and continued in English language.`,
+      },
+      {
+        id: "the-meaning-of-archangel",
+        title: "The Meaning of Archangel",
+        content: `Holy Archangel Sheila asked, "Do you know the meaning of arch? Go and google the meaning of arch. When you say arch, if you want to stop a very big ship from moving, what do you use to stop it? You will use an anchor. Immediately you throw it inside the sea, gwom! It will do what?"
+
+He spoke in a strange language, "Makuru majaa!" It will stop the ship, it will tell the ship, don't go further, the ship cannot go away. When you say an Angel is an Archangel, hmm! Disturbance dey o! We are the giant police.
+
+If God says, I want punishment to go on, I want Gaza to receive punishment, but I want you to use flood. If I reach Gaza, I will stand at the gate of Gaza, I will call the inhabitants of Gaza who are Ephramites, I will stand there and speak the word of their fathers, and I will tell them that I am here to carry out the words of the Creator Himself; that I am not liable for this punishment, but because you have decided to fight against God, the Lord commissioned me to cause you pain, and He said, 'Do that with flood.' As I am talking about it, the ground is already listening to me. I will now decide and say, 'I call on you,' because there is a spirit that is called the spirit of flood, it comes with death. And as soon as I mention the name of that spirit that is in charge of that particular territory, there will be a meal there will obey me because they don't have any choice. They have already seen that there is a messenger, and as I release them, they will come out with the very strong flood that they are causing. I will only be hearing, waiting to hear from God when He will say, 'Stop!' Then I will commission them to go back to their duty post, and that will seal the connection of their channel of destruction. Are you listening to me? As soon as I am done, I will say, 'I have finished Your work.' If it is the one that I would turn myself into flood, I will turn myself into flood and go and stand at the gates where the leader is, and I will condition the rest of my body to become flood. On my head, I will be standing at the mountain of the Presidential Seat, that is their own office, so that it will not swallow the whole city. The flood may be a flood of blood, war, famine, or anything that God wants me to go with.
+
+He spoke in a strange language and continued in English language, "If you are an Angel and God did not send you to go and do something, and you go and do that thing, in fact, God will banish you from His presence for many thousands of years. He will not destroy you; the only way God destroys any Angel is what? Disobedience. And if you went without being sent, that is, God did not send you, maybe you saw what they were doing and you were not happy, you then decide to go and punish them. God will ask you, 'Did I send you?' (2 times). You will be telling God, why did they do that? You said, 'Thus says the Lord, my Lord. You said, every child that was born in that city at the age of so, so, must receive the blessing of baptism, and every woman in that place must receive the consecration of marriage. Look at what they are doing, they are destroying the Church, they are making everywhere smell.' God will tell you, 'Did I say you should go there?'"
+
+He spoke in a strange language and continued in English language, "They will chain you o. God will say, 'You are fighting for Me, but did you ask Me?' Yes, no commandment, hei!"`,
+      },
+      {
+        id: "joyful-constellations",
+        title: "A Book Called the Joyful Constellations",
+        content: `There is no other God, except Jesus Christ. That is why when we see Jesus, you will hear the Angels say, 'There is no other God, except Jesus Christ!' So, there is a signal for the whole world. Please, be fast so that you can bring out souls (2 times); heaven will rejoice immensely at the birth of these souls in the City because it is a great and enormous crowd. Be patient with God. That is why now, the Lord is raising seven pinnacles of altars representing the seven Archangels that are always in God's presence. There are many souls who have more power, in short, who are stronger than some Angels, and they are worshipping such souls. Angels are bowing; in short, Angels are serving such souls, just like you get demons serving high spiritual human beings that are serving Lucifer. You know, anything that Lucifer is doing, he is mimicking it from God. Are you listening to me? So, this time...
+
+He then spoke in Igbo language, "Enwelu akwukwo enigwe na-eje imepe." (There is a book that heaven wants to open.) Heaven is calling it 'the Joyful Constellations.' Akwukwo a, enigwe na-eje imepe ya (this book that heaven is about to open), aga emepe ya from the tunnel of the City (it will be opened from the tunnel of the City), and it has seven back covers, each of them representing an Archangel. They will go round the world and begin to pick every soul that belongs to the New Jerusalem City. Anywhere they go, they will sign the person with a mark, "aga enye gi mark" (you will be given a mark), and this mark, wherever you are, will locate you and bring you.`,
+      },
+    ],
   },
   {
     id: "mornings-of-mercy",

@@ -12,9 +12,9 @@ import { images } from "./images";
 export const latestMessages: MessageItem[] = [
   {
     id: "do-no-aggrieve",
-    title: "Do No Aggrieve the Holy Spirit",
+    title: "Do Not Aggrieve the Holy Spirit",
     excerpt:
-      "What you have to say is not of good and noble purpose, then keep silent...",
+      "If what you have to say is not of good and noble purpose, then keep silent...",
     date: "May 18, 2024",
     image: images.messages.holySpirit,
     href: "/messages/do-no-aggrieve",
