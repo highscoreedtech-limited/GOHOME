@@ -5,7 +5,6 @@ import { motion } from "framer-motion";
 import { Clock, BookText, Layers } from "lucide-react";
 import type { LibraryItem } from "@/types";
 import { hasChapters } from "@/lib/library";
-import { Pill } from "@/components/ui/Pill";
 import { BookCover } from "./BookCover";
 import { BookmarkButton } from "./BookmarkButton";
 
@@ -42,9 +41,6 @@ export function LibraryCard({ item }: { item: LibraryItem }) {
           category={item.category}
           className="h-full w-full transition-transform duration-500 ease-out group-hover:scale-[1.06]"
         />
-        <div className="absolute left-3 top-3">
-          <Pill>{item.category}</Pill>
-        </div>
         <div className="absolute right-3 top-3 z-10">
           <BookmarkButton id={item.id} />
         </div>
