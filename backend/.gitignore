@@ -1,0 +1,10 @@
+# Compiled binaries (produced by `go build -o`)
+/bin/
+newjerusalem
+newjerusalem.exe
+
+# Local environment overrides
+.env
+
+# Logs
+*.log
