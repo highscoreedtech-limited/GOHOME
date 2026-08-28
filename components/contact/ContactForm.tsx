@@ -2,17 +2,18 @@
 
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { Send, CheckCircle2, AlertCircle } from "lucide-react";
+import { Send, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { site } from "@/data/site";
+import { apiEnabled, postContact } from "@/lib/api";
 import { cn } from "@/lib/utils";
 
 /**
- * Contact form (frontend-only).
+ * Contact form.
  *
- * With no backend, a valid submission is handed to the visitor's own email
- * client via a prefilled `mailto:` link, so messages actually reach the
- * ministry. `handleSubmit` is the single seam to swap for an API/WPForms
- * endpoint later, without changing any markup.
+ * When the Go backend is configured (NEXT_PUBLIC_API_URL set), a valid
+ * submission POSTs to /api/contact. Otherwise it falls back to handing the
+ * message to the visitor's email client via a prefilled `mailto:` link, so the
+ * form works with or without the backend. This is the single delivery seam.
  */
 
 interface Fields {
@@ -35,6 +36,7 @@ export function ContactForm() {
   });
   const [errors, setErrors] = useState<Errors>({});
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
 
   const validate = (f: Fields): Errors => {
@@ -56,7 +58,7 @@ export function ContactForm() {
       if (errors[key]) setErrors((prev) => ({ ...prev, [key]: undefined }));
     };
 
-  const handleSubmit = (ev: React.FormEvent) => {
+  const handleSubmit = async (ev: React.FormEvent) => {
     ev.preventDefault();
     const e = validate(fields);
     if (Object.keys(e).length > 0) {
@@ -70,8 +72,26 @@ export function ContactForm() {
     }
 
     const subject = fields.subject.trim() || "Message from the website";
+
+    // Preferred path: POST to the Go backend when it is configured.
+    if (apiEnabled()) {
+      setSubmitting(true);
+      const result = await postContact({ ...fields, subject });
+      setSubmitting(false);
+      if (result.ok) {
+        setSent(true);
+        return;
+      }
+      if (result.fieldErrors) {
+        // Backend validation failed; surface the same per-field messages.
+        setErrors(result.fieldErrors as Errors);
+        return;
+      }
+      // Network/server error: fall through to the mailto fallback below.
+    }
+
+    // Fallback: hand off to the visitor's email client.
     const body = `Name: ${fields.name}\nEmail: ${fields.email}\n\n${fields.message}`;
-    // Hand off to the visitor's email client (frontend-only delivery).
     window.location.href = `mailto:${site.contact.email}?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}`;
@@ -171,10 +191,20 @@ export function ContactForm() {
 
             <button
               type="submit"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-brand-gold px-6 py-3.5 text-sm font-semibold text-brand-dark transition-colors hover:bg-brand-goldLight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 sm:w-auto"
+              disabled={submitting}
+              className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-brand-gold px-6 py-3.5 text-sm font-semibold text-brand-dark transition-colors hover:bg-brand-goldLight focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 disabled:opacity-70 sm:w-auto"
             >
-              <Send className="h-4 w-4" />
-              Submit
+              {submitting ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin" />
+                  Sending...
+                </>
+              ) : (
+                <>
+                  <Send className="h-4 w-4" />
+                  Submit
+                </>
+              )}
             </button>
           </motion.form>
         )}
