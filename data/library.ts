@@ -568,4 +568,85 @@ He then spoke in Igbo language, "Enwelu akwukwo enigwe na-eje imepe." (There is 
       },
     ],
   },
+  {
+    id: "the-ushering-in-of-the-antichrist",
+    title: "Mother Mary Alerts Us About the Ushering In of the Anti Christ",
+    author: "Mother Mary",
+    category: "Faith",
+    description:
+      "A series of prophetic warnings from Mother Mary on the coming one world system, the third world war, the mark of the beast, and the deception awaiting Israel and the nations.",
+    tags: ["prophecy", "end times", "anti christ", "mark of the beast", "mother mary"],
+    coverImage: "/Mother-Mary.png",
+    estimatedReadingTime: "9 min read",
+    publishedAt: "2003-04-11",
+    chapters: [
+      {
+        id: "the-ushering-in-of-the-anti-christ",
+        title: "The Ushering In of the Anti Christ",
+        content:
+          "Reference, Daniel Chapter 9, verses 26 to 27.\n\nMother Mary continued in English: 'One world government. One world currency. One world law. One world police. One world security. One world communication. The ushering in of the anti Christ, the ushering in of the anti Christ. One world president. My children, you must cry, cry out in prayer, that the Eternal Father's heart should bend a little.'\n\nShe spoke further in a strange language.",
+      },
+      {
+        id: "the-third-world-war-disclosed",
+        title: "The Third World War Is Disclosed",
+        content:
+          "Mother Mary said: 'What is happening in Holland? The President is trembling and asking, \"Do we join the war or not?\" He is trembling because he has received threatening letters from the Arab world.\n\n'The nations of Europe are trembling in fear, saying, \"Let us separate ourselves from these bodies that are destroying themselves and build a world colony that can never be destroyed.\" But in building this colony, the evil one who has been deceiving the human race will deceive the key holder and steal the key from its president, then sit and begin to usher in his wicked works.\n\n'Europe, Europe, the will of the Mighty King must take place, to usher in the reign of His Son Jesus Christ. The blasphemous spirit has been scouting the earth, counterfeiting all that the Father has been doing and changing the direction of His plan. But the Blood and the Sacrifice of His Son will continue to hold back the world until He finishes His plan.'",
+      },
+      {
+        id: "the-mark-of-the-beast",
+        title: "The Mark of the Beast Versus the Blood of Jesus Christ",
+        content:
+          "Mother Mary said: 'My children, a significant mark is at work now, an invisible mark of the anti Christ, the mark of the computer.\n\n'My children, you must be on the alert. Watch the dragon. It is waggling its tail to drag many races, nations, and kingdoms under its own community. My children, it is time for you to wake up.\n\n'The invisible mark of the enemy, which he calls the Social Security Number, will soon jeopardize the world and usher in the new mark of the beast. This new mark of the beast is the willing mark that all souls partaking in the worship of the dragon shall receive.' Reference, Blue Book Message 407, Revelation Chapter 13 verses 16 to 17.\n\n'But if you follow the Lamb, an invisible mark will be on your forehead, and this mark of the Lamb will usher you into the feast of the Passover of the Lamb. When the angels see the Blood, they will pass over you.' Reference, Exodus Chapter 12 verse 13.",
+      },
+      {
+        id: "the-counterfeit-currency",
+        title: "Lucifer Is Counterfeiting Every Currency",
+        content:
+          "Mother Mary warned: 'You must be alert. The wicked dragon has been counterfeiting every currency. Very soon he will remove the current currency and implant a new one across every nation, race, and language, forcing men to build their lives on it.\n\n'And when you refuse to bank with the bank of the dragon, you will be persecuted and cast into the fire. But do not fear, for if they kill you, you belong to Christ. If you do not stand firm to the end, the enemy will steal your heart and bank it in his own bank, the bank of perdition. Hell fire is called the bank of perdition.'",
+      },
+      {
+        id: "israel-and-the-deception",
+        title: "Israel Would Be Deceived by Lucifer",
+        content:
+          "Hell fire is called the bank of perdition, and this is why the Blood of the New Covenant, the Blood of Christ, cries out for Israel, because Israel would be the country deceived into listening to and obeying the dragon who has stolen its key.\n\n'Israel, Israel, Israel, why did you cast off the city that has been crying, the city of Jerusalem? Israel, the mother, is crying. Israel, the portion by which my Son wants to envelop the whole world.'",
+      },
+      {
+        id: "france-and-the-third-world-war",
+        title: "France Is Contemplating Joining the Third World War",
+        content:
+          "Mother Mary confronted France: 'France, France, France, are you preparing to join the war? You are still contemplating, what do we do? Do we move further or do we stand and watch them?\n\n'Yes, you are asking these questions. How many souls are waiting for me in your country France, especially the city called Paris? How many souls are waiting for me? They say they are worshipping my Son Jesus Christ and are under the influence of the Holy Spirit, yet you have many drunkards on the streets, many adulterers and fornicators.\n\n'This is a nation that has killed and maimed so many innocent souls under the power of legalized abortion, if it had only looked at what America was already doing quietly, without anyone fearing what would be said. The Lion is coming to tear you to pieces. What are you waiting for, France? Consecrate your hearts to my Immaculate Heart, so that even in your sins the Blood of my Son will wash them away in my Immaculate Heart, and you shall come home in peace to my heart.'\n\nMother Mary then spoke in a strange language.",
+      },
+      {
+        id: "a-call-to-relay-her-messages",
+        title: "A Call to Relay Her Messages to the World",
+        content:
+          "Mother Mary said: 'This is the moment of sorrow. I do not want you people to sleep. Please, my Son is here. Do not allow the enemy to steal your heart from me. I want you to relay these messages to the world.\n\n'The enemy is stealing your hearts, and you have given him your heart freely, because you have not opened your hearts to see my heart within, but you have shut them up. If you shut your eyes now, you will shut them on the last day, when every fear, every eye, every home, and every soul will be trembling.\n\n'In hell fire there is no rest, and in purgatory it is the same. Please, do not be among those who make a mockery of me. Respect the heavenly beings that are here. Respect my Immaculate Heart. I must continue to speak, I must continue to speak, I must continue to speak, to capture the hearts of my children so they may know how much I love them.'\n\nWe replied, 'We love you, Mother,' and she continued. This message was given on 11 April 2003.",
+      },
+      {
+        id: "the-cherubs-interceded",
+        title: "The Cherubs Interceded for Mankind",
+        content:
+          "'You will never abandon your children. The burden is too much on them. Where are you, where are you, Father, where are you? Many of your children have gone astray. Where are you, Father? We are crying.\n\n'Jesus Christ, Son of God, mighty King, Son of God, come and show the enemy that your Blood will never be in vain. Your Blood will never be in vain, remember your suffering will never be in vain. Saviour of the whole world, Saviour of the whole world, change the garment of your children, let them be purified in the furnace of your Blood. Let them know that you are God, Christ the King, Saviour of the world. Jesus Christ, Saviour of the world. Jesus Christ, Saviour of the world.\n\n'The mourning Messiah, the mourning Messiah, the bleeding Messiah, the wounded Messiah, the Purificator, the Purificator, the adorable Trinity of the Holy King, the Prince of Peace, come, Mighty King, Mighty King. Mighty King, set Jerusalem free, set Jerusalem free, set Jerusalem free. Your children must be saved, your children must be saved, they must be saved, they must be saved, I say they must be saved. Set them free, set them free, set your children free. Set Nigeria free, set Nigeria free, set Nigeria free, set Nigeria free.\n\n'The burden is too much, Father, the burden is too much. Messiah, you are wounded. Forgive them, forgive them, Father, forgive them, Jesus Christ. Holy One of Israel, forgive them. Helohim, Helohim.'\n\nThe Cherubs sang this in a strange language while crying.",
+      },
+      {
+        id: "archangel-michael-invites-us",
+        title: "Archangel Michael Invites Us to Follow Christ",
+        content:
+          "'You also must be tested, tried, and purified for Christ. Michael is calling you now, listen, for there may be no time again.\n\n'Jesus Christ died and was resurrected for you to live. Let no one take your salvation key from you, because you will regret the day judgement is passed on you. Be steadfast in your prayers. Be looking up to the Son of God. You must continue to be patient. Set your arms to stand firm through all the trials and temptations coming your way.'",
+      },
+    ],
+  },
+  {
+    id: "no-one-will-answer-for-you",
+    title: "No One Will Answer for You, Not Even a Priest",
+    author: "The Holy Spirit",
+    category: "Christian Living",
+    description:
+      "A solemn word on accountability before God, every soul shall answer according to the calling and authority entrusted to them, and every priest shall answer for the souls placed under his pastoral care.",
+    tags: ["priesthood", "accountability", "judgement", "clergy"],
+    coverImage: cover("no-one-will-answer-for-you"),
+    estimatedReadingTime: "4 min read",
+    content:
+      "No one will answer for you, not even a priest. Every person shall answer according to what he or she was called to do and according to the authority entrusted to him or her.\n\nIf you are a priest and you fail to fulfil your priestly ordination vows and your sacred duties toward the souls entrusted to your care, you will answer for every one of those souls. Are you hearing Me? If one million souls have been placed under your care, you will answer for each one individually. Should you fail in your responsibility, you will answer for it in hellfire.\n\nBut if you faithfully taught them and can say, 'I instructed them not to steal, yet they stole. I warned them against adultery, yet they committed adultery. I told them not to covet another person's property, yet they coveted. I taught them God's commandments faithfully, but they refused to obey.' Then, when your heavenly record is examined and it is found that you truly lived what you preached and sincerely instructed those under your care, their sins will not be counted against you.\n\nThe priest is accountable for every soul entrusted to his pastoral care.\n\nTherefore, understand that there is very little time left for the world. We are marching forward, and Jerusalem must be filled with great men.\n\nThe New Jerusalem, as prophesied in Revelation 21:1-4, has been manifested by Heaven in the Catholic Church, from the heart of Petrus (Peter), the foundation stone of our Christian faith established by Jesus Christ, in Enugu, Eastern Nigeria, under the leadership of three chosen Reverend Fathers as spiritual directors.",
+  },
 ];

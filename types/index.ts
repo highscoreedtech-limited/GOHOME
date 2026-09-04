@@ -47,6 +47,27 @@ export interface WorkItem {
   icon: LucideIcon;
 }
 
+/** Shared shape for every Jacob's Well pillar page (Trinity Kitchen, Motherless Babies' Home, etc.). */
+export interface JacobsWellContent {
+  hero: {
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    image: string;
+  };
+  story: string[];
+  /** Optional impact numbers shown as a stat strip between story and gallery. */
+  stats?: { value: string; label: string }[];
+  howWeHelp: {
+    heading: string;
+    items: string[];
+  };
+  closing: {
+    quote: string;
+    note: string;
+  };
+}
+
 /** Gallery thumbnail. */
 export interface GalleryImage {
   id: string;

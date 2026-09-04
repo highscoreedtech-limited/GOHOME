@@ -35,4 +35,14 @@ export const images = {
     "/gallery-8.jpg",
     "/gallery-9.jpg",
   ],
+  // Jacob's Well sub-ministries.
+  jacobsWell: {
+    // Trinity Kitchen photos from /public (swap/add files here as more arrive).
+    trinityKitchen: [
+      "/Trinity-k1.jpg",
+      "/gallery-1.jpg",
+      "/Trinity-k1.jpg",
+      "/gallery-1.jpg",
+    ],
+  },
 } as const;
