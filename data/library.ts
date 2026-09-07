@@ -33,6 +33,109 @@ export const CATEGORIES = [
 
 export const libraryItems: LibraryItem[] = [
   {
+    id: "divine-mercy",
+    title: "Divine Mercy",
+    author: "Holy Archangel Sheila",
+    category: "Devotionals",
+    description:
+      "A seminar teaching on Divine Mercy: the Door and Key of Mercy given to St. Faustina, the spiritual dialysis of the Blood of Jesus, and why you must never miss the Divine Mercy prayer. Given on 26th October 2025.",
+    tags: ["divine mercy", "the blood", "transformation", "faustina", "prayer"],
+    coverImage: cover("divine-mercy"),
+    estimatedReadingTime: "9 min read",
+    publishedAt: "2025-10-26",
+    chapters: [
+      {
+        id: "the-door-of-mercy",
+        title: "The Door of Mercy",
+        content: `Holy Archangel Sheila revealed:
+
+"Blessed Faustina had such an encounter. She was seeing Jesus face to face, and sometimes Jesus would come with a child. Mary also visited with Jesus. In short," he spoke in a strange language and continued in English, "this woman is the door. We call her 'The Door of Mercy' because the 'Key of Mercy' was given to her, especially in this second coming of Christ. That is why," he spoke again in a strange language and then said in English, "yes, that is the reason why Pope John Paul II is the Pope of the New Jerusalem City, because he was the one that inaugurated 'The Door of Mercy,' and you are working in the Office of Divine Mercy.
+
+"That is the reason every Supper takes off at 3 p.m., because this is the office you all are representing on earth. Once the time opens, Pope John Paul II is there.
+
+"Even if you are the worst sinner, even if your sin is beyond whatever, just say, 'I am here to become a new person,' and you will see her do what she is supposed to do for you.
+
+"Do you know what she will do? She will take you into the laboratory. Let me tell you, whenever you are asked to say Divine Mercy and you are joking with it, I advise you, stop joking with it. It is your first work. Once you are accepted on the Table, what is the next thing that will be given to you? Divine Mercy!
+
+"Do you know what happens? She will diagnose you and check the level of your, what? Sickness.
+
+"Because anybody entering the New Jerusalem City is coming there as a sick person, a patient. Are you listening to me? Even if the level of your holiness is beyond whatever, before you entered, there is a particular area you will reach. She will take you once you are commissioned to say the Divine Mercy, she will complete her task."`,
+      },
+      {
+        id: "a-comprehensive-hospital",
+        title: "A Comprehensive Hospital",
+        content: `"The three months before you will be started on another level of journey, do you know what she does? Because inside the City there is a comprehensive hospital. In short, using 'specialist' is a little or minute word."
+
+He spoke in Igbo language and said:
+
+"Ị na-ege m nti? Nnukwu ụlọ ọgwụ, ana agwọ ọrịa, gwọọgide."
+
+(A very big hospital where sickness is treated and continues to be treated.)
+
+He continued in English and said:
+
+"Some enter there with serious cancerous diseases. But there are two things I want you to understand: if you enter maybe with tuberculosis, do you know there is a tendency that you might spread it? Somebody among you that is not well protected can catch that tuberculosis. Do you know that?
+
+"If you are not obeying, and you are just being loose, joking with yourself, coming there but not wanting to get involved, you can get infected with another person's sickness.
+
+"When the person is receiving treatment and becomes whole and hearty, you start your own journey of the same sickness. That is one thing you do not know, and the more reason you should know why you are there, and you must not let anybody disfigure your face."`,
+      },
+      {
+        id: "spiritual-dialysis",
+        title: "Spiritual Dialysis",
+        content: `He continued the narration:
+
+"So, as soon as you enter, everybody must undergo spiritual dialysis. Do you know the meaning of spiritual dialysis?
+
+"She, St. Maria Faustina, will take you to the laboratory where there is only one infusion on the table. Let me just use the human methodology: the dialysis machine, and the blood they will bring will be the Blood of Jesus Christ. And they will use the machine to pass the Blood so it will be purifying the dirty blood."
+
+He spoke in Igbo language:
+
+"Ka ana e-purify ya, ka ana etinye the Blood of Jesus Christ, and by the time you come out, you will be refreshed."
+
+"It takes three months to do that, and during that period there are three liturgical transformations with Divine Mercy.
+
+"So," he spoke again in Igbo language, "Ka ana e-treat gi, I na-a pay attention."
+
+He continued in English:
+
+"Make sure you are not missing your Divine Mercy prayer! Anytime you miss it, it means you did not present yourself for dialysis.
+
+"So, if your family lineage is as cancerous as what? A very strong sickness. That Blood that Jesus has already passed through you will stand by your gate to defend you.
+
+"Listen to me, as soon as that Blood enters," he spoke in Igbo language, "Onweghịzi ife dị ka" (there is nothing like)."`,
+      },
+      {
+        id: "the-blood-takes-over",
+        title: "The Blood That Takes Over",
+        content: `He continued in English:
+
+"The blood of your forefathers is wasting their time. The only thing is that it will take some time for you to receive healing. The Blood has already been transfused, 'a transfuse gọlu gị' the new Blood.
+
+"So, what you have to do is to wait for your body that was decayed, that had different wounds, to now begin to recover. But it is not an automatic process, because you are still in the flesh, and it will be a spiritual process.
+
+"By the time you know what is happening, you that loved to lie will begin to hate lies, you that loved to commit fornication will begin to hate fornication, you that pride had disgustingly taken over will begin to be humble. And when you are doing it, you will not know, because the Blood of Jesus has taken over your blood."
+
+He spoke in a strange language and continued in English:
+
+"That is why you will say, 'If you met me when I used to be myself, o! I would use my mouth to chop off your head. Now, you are doing this thing to me, and I don't even know why I cannot hurt you.' Because the Blood of a healer has possessed you!"`,
+      },
+      {
+        id: "do-not-miss-divine-mercy",
+        title: "Do Not Miss Your Divine Mercy",
+        content: `He advised:
+
+"Don't miss your Divine Mercy prayers. That is the secret of your transfiguration, and you will see that sin will become what? A thing of the past. Do you have the energy to commit sin now? Do you still have the desire to commit sin?
+
+"Do you know there are people that enjoy sinning? You will see them, they will be like, 'What can I steal? What can I steal? I stole twenty thousand naira yesterday. What can I pick up? Let me do pick up.' Do you know what pick up means? Go and steal from the pocket. When you start stealing small, small, you know there is a graduation to that, and you will start carrying a knife; from carrying a knife, you will start carrying a gun; from carrying a gun, you will become a 'capone,' you will become..."
+
+He sang: "Baba o, baba baba, oloshi o, baba o, ba baba, oloshi o."
+
+He stopped singing and continued his teaching: "You will be stealing and stealing, and it will become a normal vice for you. That is one thing I am trying to tell you people."`,
+      },
+    ],
+  },
+  {
     id: "power-of-prayer",
     title: "The Power of Prayer",
     author: "Princess Vivian Mary Peace",
