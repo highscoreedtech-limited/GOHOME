@@ -33,6 +33,124 @@ export const CATEGORIES = [
 
 export const libraryItems: LibraryItem[] = [
   {
+    id: "jesus-the-tree-of-life",
+    title: "Jesus the Tree of Life",
+    author: "Holy Archangel Sheila",
+    category: "Christian Living",
+    description:
+      "An October seminar teaching on the New Jerusalem as the spiritual capital city, the Altar of Eternal Beginning, the Tree of Knowledge that is Christ Himself, the fall of Adam, and the opened eyes of Peter. Given on 26th October 2025.",
+    tags: ["new jerusalem", "tree of life", "adam", "abraham", "peter"],
+    coverImage: cover("jesus-tree-of-life"),
+    estimatedReadingTime: "15 min read",
+    publishedAt: "2025-10-26",
+    chapters: [
+      {
+        id: "everything-according-to-plan",
+        title: "Everything According to God's Plan",
+        content: `Holy Archangel Sheila spoke in a strange language, "Majestically, ncherubim owatiye mise. Fear not, everything will be fine. I am Holy Archangel Sheila. Your garden must continue to be purified. (2 times)"
+
+He spoke in another strange language and said, "Odida ninshe, odida ninshe," and said in English language, "I don't want you to feel bad, just know that everything is moving according to God's plan. Why are you feeling bad over what you cannot control? Just make your childlike heart available for God, that is the only thing He needs from you. Don't think about it. The only thing you can say is, 'Lord, You are God, nobody can defeat You. Do what You used to do before and let shame be to those that hate You.' Can't you see where Moses said, 'God, rise up and move in glory with the children of Jacob. Go and destroy Your enemies but come in peace with the people of Israel.' This was the prayer of Moses, and when God heard it, He was at peace with the people of Israel, but those that hate Him, He will destroy. Do you think that this journey is an easy thing?"`,
+      },
+      {
+        id: "the-capital-city-of-the-world",
+        title: "The Capital City of the World",
+        content: `He spoke in a strange language, laughed and then asked, "Do you know the capital city of the world?" He laughed again and said, "When you said the capital city, where is the capital city of your country?"
+
+"Abuja," we answered.
+
+He spoke in a strange language and continued in English language, "All before was this city, but when they agreed, they moved it; today, everybody recognizes it. The capital city of the world is where? The New Jerusalem. When you talk about the New Jerusalem City, see, you are not talking about the physical city. Are you listening to me?"
+
+He spoke in a strange language and explained in English language, "You are talking about the spiritual city built by God. Did you hear what Jesus said today? That His kingdom is not of the world, it is not of the physical world but it is of the spiritual. Who is reigning now? Is it not Jesus that is reigning? Who is worshipped everywhere? Is it not Jesus that is worshipped everywhere? He is taking care of you physically as He takes care of you spiritually, so, give us this day our daily bread. He has given you the 'expo' on how to go about your daily activities. What are you looking for, if not the way of Christ, the risen Christ?"`,
+      },
+      {
+        id: "the-altar-of-eternal-beginning",
+        title: "The Altar of Eternal Beginning",
+        content: `"Abraham sought friendship with God. Do you think it was easy for him? This was a great man with so much energy. Do you know why God chose him, though it was a written monarch? God had already planted souls that were going to help Him regenerate and return man to His presence, so Abraham fell into that soul. Abraham, as you are looking at him, you are looking at a man who had answered God in different ways, in different places. Are you listening to me? If God did not plan His movement and install Jesus, today all of you would be like sheep without a shepherd. But this is a simple thing: there is the government, the sovereignty, a powerful dominion, and His kingdom will never have an end. That is what you are all enjoying, enjoying the Altar of Eternal Beginning. (2 times)
+
+"Anybody that asks you who you are and where you come from, tell them, 'I am a Prince or Princess of the New Jerusalem City, enjoying the Altar of the new beginning.' Because eternal beginning means, as soon as the Lord Almighty destroyed the first world, He laid the foundation of the New Jerusalem City. When Adam and Eve became what they were, the prophet in Adam, you know, Adam was supposed to be a prophet, Adam was a prophet. Are you listening to me? Adam was the first prophet of God, because through him God created the earth, and through Adam named each and everything. Before God could do anything, He would summon Adam and they would sit down and they would be talking: how do we generate? If you want to talk about the great scientists, Adam was another one. Are you listening to me?
+
+"See, if you want to watch 'time after' (things that happened before), it is just like if you want to watch your television: you get a film and slot it in and you watch about maybe the film you have been hearing before. Every Biblical story in Heaven has its own archives where the Holy Spirit did what? Kept heavenly archives. That is what the heavenly saints are enjoying in heaven. If they want to know, they will know. Knowledge is what? It is unlimited in heaven. When you enter heaven, knowledge is unlimited. You want to know about this, it is opened in the air like this, piam! And before you can open the air, you must know the level of code you are, o? It is not anyhow. If you don't have that code to access, you will be stuck, and that is why the code is slid in the Seven Beatitudes, 'Blessed are those who are pure and holy, for they shall see God.' Matt. 5:3-10; Luke 6:20-23 (38:34). You must have that code; if that code is not perfect, you are wasting your time, but nothing impure will enter heaven. Are you listening to me?"`,
+      },
+      {
+        id: "the-tree-of-knowledge",
+        title: "The Tree of Knowledge",
+        content: `Holy Archangel Sheila revealed, "We have told Peace, 'Don't expose us; time is coming when you are going to expose us.' And when it is time, we cannot allow you to see anything. Now, until when it is time, everything the Lord has demanded will come to pass, and that is when you bring in your ancestors from the Egyptian border down to a place of reconciliation of God and man, and that man is in the authority of Jesus Christ.
+
+"So, in heaven, there is a limit; if you don't have the code for access, you cannot open. For example, you want to know about your origin, how you came about, who your father is and who your great, great father is? In fact, which tree? Because in heaven, there is something like the tree of what? The tree of knowledge that gives birth to every inhabitant of the earth. Everybody is represented like a leaf on that tree, and that tree has several branches. When you go, it is just like everything on earth. If God wants to travel to Egypt now, do you think He needs to fly? He will just go there to the tree and He will wake up in Egypt, and through the leaf, as He enters the Egyptian country, He will reside in the Presidential what? Villa! As soon as He enters the Presidential Villa, He will command the spirit that is ruling with Him, He will tell the spirit what He wants to do, and He will command those spirits and commission them. It is by order; nobody questions God. Nobody questions God!
+
+"The only way God wants to romance with the spirit is if a man is in charge, and the man has the channel to speak with God. God might decide to tell the man, 'See, because of this thing your country is doing, I am coming down to punish you in the next six generations,' and if the man is close to and fears God, he will begin to negotiate with God, and at the end of the negotiation, God might decide, 'Okay, he has decided to show repentance.' That was the story of Lot and Abraham (41:32), and as far as God was concerned during Abraham's time, anywhere Abraham took possession of, Abraham became the President of that country; every other body is secondary. Gen. 14. Are you listening to me?"
+
+He affirmed, "I am Holy Archangel Sheila. See, I want you to know little, little things. Things that can help you in your spiritual what? In your spiritual negotiation. I am telling you the little, little ways you can meet God. I am telling you that the tree that Adam and Eve were forced not to eat is Jesus Himself, and in that Jesus is where God has centered and said, 'His dynasty will never, never end.' Luke 1:33. What dynasty did He mean? Because He had already created that tree, He was with God; that was why the Bible said, 'He is with God and He is God, and through Him all things were made.' John 1:1-3; Col. 1:16. That tree of knowledge is where all things in heaven and on earth were made. Adam was like a caretaker, but he was also the first prophet, and no other prophet was as great as Adam before the darkness of Lucifer entered to corrupt the nature of Adam."`,
+      },
+      {
+        id: "the-corruption-of-adam",
+        title: "The Corruption of Adam",
+        content: `"And once Adam's nature was corrupted, what Satan was looking for was that rebellion key. Lucifer had been looking for that rebellion key, and he took the key from man and collected every gift that God had given to man and began to control man. And by the time God was able to move in the garden to see how things were as the Owner of the whole universe, the whole thing in creation, He became disappointed. Adam begged and gave God what? Excuse, that the woman 'You gave me corrupted me.' But God said, 'I made you to be in charge of everything, to have dominion over all things. How can you tell Me that the woman that came out from you can do this to you, and you hurt Me like this? Adam, where have I gone wrong? I am trying to raise up candidates that will be like Me to govern the earth, as I have created other planets, and you are here confusing yourself, that the woman You gave me. How can you bring yourself so low, that you who have been the head, now you decided to be the tail?'
+
+"What was he looking for? Lucifer was looking for the key because he had been a rebel from day one. What am I trying to tell you? That the Tree of Knowledge is where the power of reconciliation with man is. See, if Adam had been able in another way to find a way to go and eat from that tree of knowledge, the tree of life and death, man would no longer die, o. You would no longer die, you would be above death; and on that note, I know that if you ask me, God might end everything about human beings. He might end it, but today we are counting on the resurrection, and we are counting on the salvation that Christ has brought upon man, and today you are all enjoying like the Angels, enjoying every minute, every second."`,
+      },
+      {
+        id: "the-authority-of-the-city",
+        title: "The Authority of the City",
+        content: `"I can transport myself to any region of the world, but in Heaven there are places I cannot transport myself to. Do you know why? There is what is called a 'hierarchy,' a spiritual hierarchy, that you cannot transport yourself there unless you take permission. But here, everywhere I want to go, I can enter; I cannot take permission from anybody. This is my authority, because the New Jerusalem City stands taller than every other city on earth. So that is the key, that is the benefit."
+
+He spoke in a strange language, "O menjawo rienu nsowa papa metikilona," and continued in English language: "Hei! When the key surfaced on earth, every soul of Adam began to ask, 'God, why did You deny us this? Why did You do to us the way the Apostles were seeking for Christ? By the time they saw Christ, they were carried away with joy.'"`,
+      },
+      {
+        id: "peter-and-the-master",
+        title: "Peter and the Master",
+        content: `"And do you know, somebody like Peter did not used to go to his house. Imagine what happened to Peter that he abandoned his family? He did not ask of his children; and even at that, as Peter abandoned his family, Jesus was taking care of Peter's family indirectly. Have you asked yourself how? Jesus was taking care of what? Peter's family, and how was He doing that? He was sending Angels to supply them their physical needs. The only thing Peter knew was to ask, 'Where do You stay, Master?' John 1:35. Every minute, every second, Peter didn't care about anything again.
+
+"Then when Jesus was telling him He would go to Jerusalem and He would die, Matt. 16:21; Luke 9:51, Peter was like, 'What are You saying? You are just joking. This thing I have seen in You, You want to leave us, o.' Peter was the person that held Jesus and began to ask Him. When the time came, the eyes of Peter were opened after the resurrection. Peter's eyes were not opened before, you know why? Because, obsessively, he loved Jesus too much; he didn't want to hear anything else. The Master is here, the Master!
+
+"See, let me tell you, during that time, different masters had come. Every set had their own master, just the way you have many pastors all over, and some of them claim that they are 'God,' that they are the image of an unseen God."`,
+      },
+    ],
+  },
+  {
+    id: "all-monies-are-under-curse",
+    title: "All Monies Are Under Curse",
+    author: "The Holy Spirit",
+    category: "Christian Living",
+    description:
+      "The Holy Spirit encourages the zeal of the members, warns that all money is under a curse through Judas and must be overcome, and instructs that the secret of the House should never go outside. From Book 5.",
+    tags: ["money", "zeal", "judas", "discretion", "holy spirit"],
+    coverImage: cover("all-monies-are-under-curse"),
+    estimatedReadingTime: "5 min read",
+    chapters: [
+      {
+        id: "all-monies-are-under-curse",
+        title: "All Monies Are Under Curse",
+        content: `The Holy Spirit encouraged us for our zeal and also instructed us to be careful when dealing with money, for all monies are under a curse.
+
+"I can see the zeal reigning in your hearts. You are being aflamed. This is beautiful. See all your hearts, I can see them. Oh! It is beautiful. Keep it up! Holiness, holiness; strive, strive further, all of you!
+
+"When I tell you the spirit is greedy, I mean the spirit of Judas, because it was always attracted to money. Judas is cursed, and once Judas became a curse, the money exchanges and whatever represents money on earth became a curse. Matt. 26:14-25; Mark 14:10-11, 20-21; Luke 22:8, 14-23. Are you listening to Me? Have you understood Me?"
+
+"Yes, my Lord," we replied.
+
+He then continued: "Judas became a curse, so all monies are under curse. All the monies you are using are under curse. That is why, if you are not strong enough, money would carry you along to destroy you. But if you are strong you will fight, and then you will be above it, just like Jesus fought to be above the world. He has overcome the world. It is not the other way round. Do you understand Me?"
+
+"Yes, my Lord," we replied.`,
+      },
+      {
+        id: "the-secret-of-the-house",
+        title: "The Secret of the House",
+        content: `The Holy Spirit instructed that the secret of the House should not go outside.
+
+"Whenever you are told of your fault, even if it is not true, try and caution yourself.
+
+"One thing I am trying to let you people know again is this: you will not gossip with your brothers or sisters. Are you listening to Me? I don't want the secret of the House to go outside. Do you understand Me?"
+
+"Yes, my Lord," we replied.
+
+He went on: "Not even in your household. Do you understand Me? Keep it to your heart and make sure you pray for one another. This is My voice this evening. May the peace which I give you be with you forever, in Jesus' Name."
+
+"Amen," we replied.`,
+      },
+    ],
+  },
+  {
     id: "how-men-kill-their-generation",
     title: "How Men Kill Their Generation",
     author: "The Holy Spirit",
