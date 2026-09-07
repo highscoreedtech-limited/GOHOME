@@ -33,6 +33,89 @@ export const CATEGORIES = [
 
 export const libraryItems: LibraryItem[] = [
   {
+    id: "how-men-kill-their-generation",
+    title: "How Men Kill Their Generation",
+    author: "The Holy Spirit",
+    category: "Christian Living",
+    description:
+      "The Holy Spirit teaches on the secret of circumcision, the Seed of Creation, and how fornication and adultery destroy a man's generational line. Given on 3rd December 2013.",
+    tags: ["purity", "the flesh", "circumcision", "generation", "holy spirit"],
+    coverImage: cover("how-men-kill-their-generation"),
+    estimatedReadingTime: "12 min read",
+    publishedAt: "2013-12-03",
+    chapters: [
+      {
+        id: "the-secret-of-circumcision",
+        title: "The Secret of Circumcision",
+        content: `One among us asked the Holy Spirit, "My Lord, why did God tell Abraham to circumcise his sons? Does that covenant still hold since Jesus has come?"
+
+The Holy Spirit replied her, "Why does she want to know the secret depth of Our divine connection with man? This is the Secret Divine Connection with Us and man. The reason of circumcision is the reason of cutting off the man from the old man to the new man. One man has sinned against Us with the power of Adam. We want to switch to a new race. That is why circumcision came to be the new race of the New Kingdom of the New World. That is why circumcision came as a sign, a birth mark, but there are other secret things behind it which I am not going to explain to you. I am going to leave it to your simple understanding, so that you will not say I taught you what you do not understand. If I should go deeper with My teachings you will become confused. Are you hearing Me?"
+
+"Yes, my Lord," we answered.
+
+The Holy Spirit continued, "Every man carries the head of that circumcision. Why does the head come like that? And why did We tell Moses to make a bronze snake, and whoever looks upon it shall be saved? Do you know why? The head of every circumcised man looks like the head of the snake that has deceived human beings. Is it not true?
+
+"The head of every man with uncircumcised manhood, how does it look like? It looks like a crown cap, like a ring. While that of the circumcised looks like the head of a snake. Why We demanded circumcision is for man to remember that from the curse he is receiving blessing. In that man there is a wage of sin, and you know that the wages of sin is death. That crown cap look is the wages of sin; that thing like a ring is the wages of sin on the manhood of an uncircumcised male. We made it that man will no longer continue to sin against Us. So on this We are cutting you off from the curse of Adam and Eve."`,
+      },
+      {
+        id: "a-new-race-through-christ",
+        title: "A New Race Through Christ",
+        content: `"But now a new race is beginning through the body of Christ. That is why, when Jesus came, circumcision meant nothing again. So what you people are doing now, that is, circumcising your male child, you are doing it because of the Word of God that has remained eternally. Heaven and earth will pass away, but My Word will never pass away. Jesus' Word will never, never pass away."`,
+      },
+      {
+        id: "the-seed-of-creation",
+        title: "The Seed of Creation",
+        content: `"Now there are things I want to say about the corridor by which every soul comes to the earth. I am talking about the manhood of man, the passage of creation. The sac which you call the testis contains mankind; it contains the souls of each person as a human being. It is like another world of souls carefully tucked and packed away, waiting for the time of germination. Souls come out of it through the little, little worms that come out like mad. What do you call it?"
+
+"We call it the sperms," we replied.
+
+The Holy Spirit said, "That is what you call it. Is it not true? But We call it the Seed of Creation. It is just like you get a mango seed and you plant it; you get an orange seed and you plant. Inside an orange seed, can you name the number of seeds that are there?"
+
+"No, my Lord," we replied.
+
+The Holy Spirit continued, "So that cap shows that the wages of sin is death. As soon as you continue to discharge your seed, and you finish the seed that is in the bottle or the sac of your creation, let Me tell you that in each man We deposited it for you to hold Us to become co-creators. Ihecha ji i ga agba ya oku?"
+
+"No, my Lord," we replied.
+
+The Holy Spirit said, "Igba ya oku i ga enwe ji ozo?"
+
+"Mba o!" we replied.
+
+The Holy Spirit continued, "Otua ka odi nkea. Each man nweelu ji, Each man ka ana akpo, any man that is born, ebunyulu ya ji o ya bia na nwa, bia mee gini, ko njanwa bu ife a na akpo, the sperm of creation, seed of creation. A biazia o useless ya, omebisizieya onwerozi nke o ya ejoweekoo ugbo. Mgbe oluzilu ya iko ugbo ojeghelibe na a yozie. Some go a long way to call another man to come and plant their seed into their own vineyard. The vineyard is the womb of the wife he has married, which is another world of its own. As you look at this world, don't you see that will fill the whole world? You were made to be co-creators of all souls on earth. So any man, once he gets married, they form a new kingdom. They begin to generate a new generation. Can you count your generation from now? Are you able to give the origin of your own generation?"
+
+"No, my Lord," we replied.
+
+The Holy Spirit continued, "So as you see, if a man does not live a very useless life and was able to keep himself only for the wife that he got married to, and was able to use his own seed to plant in the womb of the woman that he got married to, when he dies he will carry the remaining one to give to the next person that is coming to the world from his lineage. So when he goes to the next world he gives it to the next person that is coming, in order to continue his generational line. As they are dying, a new one is coming and they are planting. And this is something that will continue to exist until the coming of Christ, when there will be nothing like co-creation again and Jesus will be Lord of all things. Are you hearing Me?"`,
+      },
+      {
+        id: "how-the-blood-decays",
+        title: "How the Blood Decays",
+        content: `The Holy Spirit continued, "So in the same sac of a human creation, you cannot determine the number of souls it can produce. It is a cycle thing; every day it renews a new thing. But some men decide to kill their own by the way they live their lives through immoral living of fornication and adultery. When you begin to move about in your lustful desire, you begin to eject out the generation of your own seed into the womb of another woman that is not your wife. What happens to your sac of creation then? As a useless man enters into the womb of a woman, into the corridors of a woman, he goes there to deposit a... how many creation (sperm) moves out? How many numbers of souls do you release at that movement? At that moment, ejaculating, you can release up to a hundred million souls!
+
+"So when a man in his wickedness, that is living in evil, continues to deposit hundreds of millions of sperms in a woman that he has slept with, and he must have done it several hundred times, how many do you think will remain inside the sac?"
+
+"Nothing," we replied.
+
+The Holy Spirit said, "And his blood will begin to decay, because the blood has become contaminated. There won't be a new spring of life that will generate new seed for his generation. That is when you say so and so person has been attacked by what? You call it Venereal disease. Is it not true? But We call it Demons of Sexualism. We allow the demons of sexual attack to begin to attack it, and that is the origin of HIV. Anyone We bring out for you, you give it a big name! We are bringing out another one, you have found solution to the world of AIDS. Now We are generating a new one that is more dangerous than AIDS!
+
+"Each demon has its own attack. All these things you call venereal diseases are demons of sexual immoralities; many of them are Asmodeus, Secumbus and Incubus, Socabas, Subanas, Maribanas. And that is how We have made them to have venoms of snake, poisons, so that man can be able to withdraw and keep their sac of creation and keep it for their right of creation. That is why you must run away from the sin of the flesh, idolatry (worship of idol)! Idolatry follows the sin of fornication, adultery, sexual and immoral pleasures of the flesh."`,
+      },
+      {
+        id: "guard-your-generational-line",
+        title: "Guard Your Generational Line",
+        content: `"Yes, my Lord," we answered.
+
+The Holy Spirit said, "I do not want to go deeper so that you do not become too confused. It is just like in a race where you are running: you run and give your Baton to the next partner. Have you seen that race? It is the way the world is with the generation of teaching. So the remaining sac of the seed the man was not able to exhaust, when he dies, because he lived a good life, he gives it to the next person. The person continues and gives it to the next person, and so on. But if, in the process, the person that was holding the sac misuse the sac and was living a useless and reckless life of sexual immorality, and was depositing the sperms in the womb of another man's vineyard (other women's womb) and other generation, he is endangering his generational line with barrenness and impotence, because when he goes home, that is, when he dies, he will not have any seed in his sac to give the next person coming after him. That is the reason you hear of some people not being able to conceive or get a woman pregnant. Some families will be associated with barrenness and impotence despite being medically okay, not knowing they are suffering because of the sins of sexual immoralities by their forefathers.
+
+"But if somebody from their generation continues to pray and pray, and use prayers as fertilizer to reform it, We will show mercy upon them, because Christ has come and mercy has been released. But there are some that have bound their wombs, and their wombs will never, never flow again, because they have caused a great havoc to their own generation.
+
+"So these are the things you need to know, why you must not go in the sin of fornication, adultery and the sin of the flesh. It is the greatest sin that has caused human history a great destruction, and must not be allowed in the heart of those who love Jesus Christ, because even as you are forgiven, you are receiving the punishment right away. Are you hearing Me?"
+
+"Yes, my Lord," we answered.`,
+      },
+    ],
+  },
+  {
     id: "divine-mercy",
     title: "Divine Mercy",
     author: "Holy Archangel Sheila",
