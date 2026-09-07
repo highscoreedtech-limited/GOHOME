@@ -17,7 +17,7 @@ export function Logo({
   return (
     <Link
       href="/"
-      className={cn("group inline-flex items-center gap-2.5", className)}
+      className={cn("group inline-flex items-center gap-2.5 lg:mr-8", className)}
       aria-label={`${site.name}, home`}
     >
       <Image
@@ -29,7 +29,7 @@ export function Logo({
         className="h-14 w-auto shrink-0 object-contain transition-transform group-hover:scale-105"
       />
       <span className="flex flex-col leading-none">
-        <span className="font-serif text-base font-bold tracking-wide text-white sm:text-lg">
+        <span className="font-serif text-base font-bold tracking-wide whitespace-nowrap text-white sm:text-lg">
           {site.name.toUpperCase()}
         </span>
         {showTagline && (

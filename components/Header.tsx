@@ -50,48 +50,50 @@ export function Header() {
           : "bg-brand-dark",
       )}
     >
-      <Container className="flex h-[72px] items-center justify-between gap-4">
-        <Logo />
+      <Container className="flex h-[72px] items-center gap-4">
+        <div className="flex items-center gap-16">
+          <Logo />
 
-        {/* Desktop nav */}
-        <nav
-          className="hidden items-center gap-6 lg:flex"
-          aria-label="Primary"
-        >
-          {navItems.map((item) => {
-            const active =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+          {/* Desktop nav */}
+          <nav
+            className="hidden items-center gap-6 lg:flex"
+            aria-label="Primary"
+          >
+            {navItems.map((item) => {
+              const active =
+                item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
 
-            if (item.children) {
+              if (item.children) {
+                return (
+                  <NavDropdown key={item.label} item={item} active={active} />
+                );
+              }
               return (
-                <NavDropdown key={item.label} item={item} active={active} />
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  aria-current={active ? "page" : undefined}
+                  className={cn(
+                    "relative py-2 text-sm font-medium whitespace-nowrap transition-colors",
+                    active
+                      ? "text-brand-goldLight"
+                      : "text-white/85 hover:text-brand-goldLight",
+                  )}
+                >
+                  {item.label}
+                  {active && (
+                    <span className="absolute -bottom-0.5 left-0 h-0.5 w-full rounded-full bg-brand-gold" />
+                  )}
+                </Link>
               );
-            }
-            return (
-              <Link
-                key={item.label}
-                href={item.href}
-                aria-current={active ? "page" : undefined}
-                className={cn(
-                  "relative py-2 text-sm font-medium transition-colors",
-                  active
-                    ? "text-brand-goldLight"
-                    : "text-white/85 hover:text-white",
-                )}
-              >
-                {item.label}
-                {active && (
-                  <span className="absolute -bottom-0.5 left-0 h-0.5 w-full rounded-full bg-brand-gold" />
-                )}
-              </Link>
-            );
-          })}
-        </nav>
+            })}
+          </nav>
+        </div>
 
         {/* Right side actions */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="ml-auto flex items-center gap-2 sm:gap-3">
           <button
             type="button"
             aria-label="Search"

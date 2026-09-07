@@ -8,7 +8,7 @@ type Variant = "gold" | "outline" | "ghost";
 type Size = "md" | "lg";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-md font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark disabled:opacity-60 disabled:pointer-events-none";
+  "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold focus-visible:ring-offset-2 focus-visible:ring-offset-brand-dark disabled:opacity-60 disabled:pointer-events-none";
 
 const variants: Record<Variant, string> = {
   gold: "bg-brand-gold text-brand-dark hover:bg-brand-goldLight",
