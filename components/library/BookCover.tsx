@@ -2,14 +2,14 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { BookOpen } from "lucide-react";
+import { getCategoryTheme } from "./categoryTheme";
 import { cn } from "@/lib/utils";
 
 /**
  * Reusable resource cover.
  * Handles: real cover image, lazy loading (fade-in), a loading shimmer, and a
- * branded placeholder fallback when there is no image or it fails to load.
- * The caller sets the aspect ratio via `className` (e.g. "aspect-[3/4]").
+ * branded per-category placeholder (gradient + icon) when there is no image or
+ * it fails to load. The caller sets the aspect ratio via `className`.
  */
 export function BookCover({
   src,
@@ -32,12 +32,7 @@ export function BookCover({
   const showFallback = !src || status === "error";
 
   return (
-    <div
-      className={cn(
-        "relative overflow-hidden bg-brand-surface",
-        className,
-      )}
-    >
+    <div className={cn("relative overflow-hidden bg-brand-surface", className)}>
       {!showFallback && (
         <Image
           src={src}
@@ -59,40 +54,24 @@ export function BookCover({
         <div className="absolute inset-0 animate-pulse bg-gradient-to-br from-brand-surface to-brand-surfaceAlt" />
       )}
 
-      {showFallback && <CoverPlaceholder title={title} category={category} />}
+      {showFallback && <CoverPlaceholder category={category} />}
     </div>
   );
 }
 
-/** Branded fallback used when a cover image is missing or broken. */
-function CoverPlaceholder({
-  title,
-  category,
-}: {
-  title: string;
-  category?: string;
-}) {
-  const initials = title
-    .split(/\s+/)
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join("")
-    .toUpperCase();
-
+/** Branded fallback: a warm per-category gradient with a single outline icon. */
+function CoverPlaceholder({ category }: { category?: string }) {
+  const theme = getCategoryTheme(category ?? "");
+  const Icon = theme.Icon;
   return (
     <div
       aria-hidden="true"
-      className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gradient-to-br from-brand-dark via-brand-surface to-brand-darker p-4 text-center"
-    >
-      <BookOpen className="h-7 w-7 text-brand-gold/70" />
-      <span className="font-serif text-2xl font-bold text-brand-goldLight">
-        {initials}
-      </span>
-      {category && (
-        <span className="text-[10px] font-semibold uppercase tracking-wide text-white/40">
-          {category}
-        </span>
+      className={cn(
+        "absolute inset-0 flex items-center justify-center bg-gradient-to-br",
+        theme.gradient,
       )}
+    >
+      <Icon className="h-10 w-10 text-white/85" strokeWidth={1.5} />
     </div>
   );
 }

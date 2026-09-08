@@ -13,8 +13,10 @@ import type { LibraryItem } from "@/types";
  * is intentional so the optional Table of Contents can be exercised both ways.
  */
 
-const cover = (seed: string) =>
-  `https://picsum.photos/seed/njc-lib-${seed}/480/640`;
+// Items without real cover art return `undefined` here, so the card shows the
+// branded per-category gradient placeholder (see BookCover / categoryTheme)
+// instead of a random stock photo. Set a real "/path.png" on an item to use it.
+const cover = (_seed: string): string | undefined => undefined;
 
 /** Canonical category order shown in the filter bar. */
 export const CATEGORIES = [
