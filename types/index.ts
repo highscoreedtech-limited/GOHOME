@@ -73,6 +73,10 @@ export interface GalleryImage {
   id: string;
   src: string;
   alt: string;
+  /** Optional category used by the gallery filter (e.g. Worship, Outreach). */
+  category?: string;
+  /** Optional short caption shown on the gallery tile overlay. */
+  title?: string;
 }
 
 /* ------------------------------------------------------------------ *

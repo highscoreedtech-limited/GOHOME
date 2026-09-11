@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { PageHero } from "@/components/PageHero";
 import { Container } from "@/components/ui/Container";
+import { Reveal } from "@/components/ui/Reveal";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
-import { galleryImages } from "@/data/work";
-import { images } from "@/data/images";
+import { galleryImages, galleryCategories } from "@/data/work";
 
 export const metadata: Metadata = {
   title: "Gallery",
@@ -18,17 +17,25 @@ export default function GalleryPage() {
     <>
       <Header />
       <main>
-        <PageHero
-          eyebrow="Moments"
-          title="Gallery"
-          subtitle="Worship, outreach, and community life across the New Jerusalem City, captured in pictures."
-          subtitleStyle="plain"
-          image={images.aboutHero}
-          breadcrumb={[{ label: "Home", href: "/" }]}
-        />
-        <section className="bg-brand-cream py-16 sm:py-20">
+        <section className="bg-brand-cream pb-16 pt-12 sm:pb-20 sm:pt-16">
           <Container>
-            <GalleryGrid images={galleryImages} />
+            <Reveal>
+              <p className="eyebrow text-brand-goldDark">Moments</p>
+              <h1 className="mt-3.5 max-w-2xl font-serif text-4xl font-bold leading-[1.1] text-brand-ink sm:text-5xl">
+                Gallery
+              </h1>
+              <p className="mt-4 max-w-xl text-lg leading-relaxed text-brand-muted">
+                Worship, outreach, and community life across the New Jerusalem
+                City, captured in pictures.
+              </p>
+            </Reveal>
+
+            <div className="mt-9 border-t border-black/10 pt-6">
+              <GalleryGrid
+                images={galleryImages}
+                categories={galleryCategories}
+              />
+            </div>
           </Container>
         </section>
       </main>
