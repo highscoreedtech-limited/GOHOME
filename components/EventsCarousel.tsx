@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import type { EventItem } from "@/types";
-import { EventCard } from "./EventCard";
+import { HomeEventCard } from "./HomeEventCard";
 import { cn } from "@/lib/utils";
 
 /**
@@ -48,7 +48,7 @@ export function EventsCarousel({ events }: { events: EventItem[] }) {
       {/* Desktop grid */}
       <div className="hidden gap-6 lg:grid lg:grid-cols-3">
         {events.map((event) => (
-          <EventCard key={event.id} event={event} />
+          <HomeEventCard key={event.id} event={event} />
         ))}
       </div>
 
@@ -62,7 +62,7 @@ export function EventsCarousel({ events }: { events: EventItem[] }) {
                 key={event.id}
                 className="min-w-0 shrink-0 grow-0 basis-[85%] pr-4 sm:basis-[48%]"
               >
-                <EventCard event={event} />
+                <HomeEventCard event={event} />
               </div>
             ))}
           </div>

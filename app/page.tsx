@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/SectionHeader";
 import { HomeMessageCard } from "@/components/HomeMessageCard";
-import { HomeEventCard } from "@/components/HomeEventCard";
+import { EventsCarousel } from "@/components/EventsCarousel";
 import { QuickLinksCard } from "@/components/QuickLinksCard";
 import { JoinMissionCard } from "@/components/JoinMissionCard";
 import { OurWorkGrid } from "@/components/OurWorkGrid";
@@ -75,13 +75,9 @@ export default function HomePage() {
                   </a>
                 </Reveal>
 
-                <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                  {events.map((event, i) => (
-                    <Reveal key={event.id} delay={i * 0.05}>
-                      <HomeEventCard event={event} />
-                    </Reveal>
-                  ))}
-                </div>
+                <Reveal delay={0.1} className="mt-6">
+                  <EventsCarousel events={events} />
+                </Reveal>
               </div>
 
               {/* Sidebar rail */}
