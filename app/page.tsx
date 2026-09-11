@@ -15,11 +15,11 @@ import { OurWorkGrid } from "@/components/OurWorkGrid";
 import { GalleryHighlights } from "@/components/GalleryHighlights";
 
 import { events } from "@/data/events";
-import { getFeaturedItems } from "@/lib/library";
+import { getLatestItems } from "@/lib/library";
 import { site } from "@/data/site";
 
 export default function HomePage() {
-  const promoted = getFeaturedItems().slice(0, 3);
+  const promoted = getLatestItems(3);
 
   return (
     <>

@@ -26,6 +26,14 @@ export function getFeaturedItems(): LibraryItem[] {
   return libraryItems.filter((item) => item.featured);
 }
 
+/** The most recently published resources first (by `publishedAt`). */
+export function getLatestItems(limit?: number): LibraryItem[] {
+  const sorted = [...libraryItems].sort((a, b) =>
+    (b.publishedAt ?? "").localeCompare(a.publishedAt ?? ""),
+  );
+  return typeof limit === "number" ? sorted.slice(0, limit) : sorted;
+}
+
 /** True when a resource has a Table of Contents (chapters). */
 export function hasChapters(item: LibraryItem): boolean {
   return Array.isArray(item.chapters) && item.chapters.length > 0;
