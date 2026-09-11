@@ -35,6 +35,147 @@ export const CATEGORIES = [
 
 export const libraryItems: LibraryItem[] = [
   {
+    id: "the-wonders-of-the-rosary-and-the-crown",
+    title: "The Wonders of the Rosary & the Crown",
+    author: "Holy Archangel Sheila",
+    category: "New Jerusalem City",
+    description:
+      "A full teaching from the 1st June 2026 session: the wonders of the rosary as the story of your salvation, the Holy Mass and the rosary as physical and spiritual Calvary, the levels of human beings and the angels that record each life, the crown of twelve that reaches from the altar to the throne of God, the four gates of the New Jerusalem City, the Book of Life, submitting your will to God, and the mystery of Mary's womb.",
+    tags: [
+      "rosary",
+      "prayer",
+      "holy mass",
+      "angels",
+      "new jerusalem",
+      "altar",
+      "stars",
+      "gates",
+      "mary",
+      "book of life",
+    ],
+    coverImage: cover("wonders-of-the-rosary-and-the-crown"),
+    estimatedReadingTime: "30 min read",
+    publishedAt: "2026-06-01",
+    chapters: [
+      {
+        id: "the-wonders-of-the-rosary",
+        title: "The Wonders of the Rosary",
+        content: `Holy Archangel Sheila said, "Let me tell you the wonders of the rosary. The rosary is like; I have told you three (3) things that the rosary does, can you tell me?" He spoke in a strange language, "Ama loterinie nsho wagani. Answer me!" Someone said, "Rosary is like a bullet." Holy Archangel Sheila said, "One, the next one." Someone else murmured and He said in a strange language, "Malorieni, open your mouth and talk." The person repeated and said, "Like a rose that we give to the Blessed Trinity through the Blessed Virgin Mary." Holy Archangel Sheila said, "Eee malo tekii azanu washee, you answered but remain small," then said, "Ok, the next one." The 3rd person said, "The story of mankind." Holy Archangel Sheila put it correctly and said, that is the history of your salvation, which you are telling the reprobate. You are telling satan, don't near me, this is the story of my salvation and as soon as this story of salvation is coming to him, he does not like to stay around, he will run.
+
+So, if you are saying your rosary every day and run away from sin, you have nothing to do with satan. Run from sin that can cobweb you, especially lies.
+
+Do you lie? If you tell small lie, you will like to tell bigger lie. It is better you say, "yes" is "yes" and "no" is "no".
+
+If you don't come to Supper, you don't come to lecture, you don't come to seminar, you don't come to anything that is happening in the house and you expect to become a soldier, to become a hurricane in the house of the Holy God, do you think it can work?
+
+You want to eat food every day to survive but you don't want to eat the word of God. As I am talking to you, I am telling you the real meaning of the word of God. Strange language, "Owatorio ishebio kowa dara damio siyo, filubadadi takuomie." If you say you love God, you must sacrifice for Him to be loved. Tell me a man who said he loves his wife or he loves his family that he does not go a long mile to bring a sacrifice, is that love? Is that love? If you love your family, a man that loves his family, what does he do? He will not sleep nor slumber until he sees that everything about his family is taken care of. Now, you think that God who loves you is sleeping? Why can't you say your rosary to nurture your vineyard, lose yourself with your rosary. The rosary is a powerful communication. The Virgin gave this rosary to you, it is what? Communication. If you cannot say your rosary every day, at least do what? Attend the Holy Mass. Two of them. The Mass is the physical Calvary; the rosary is the spiritual Calvary. When the Priest is raising the Host and the power is coming consuming everything, every sin, everything that is in the altar. Jesus has done it once and for all. So, that is why your world is still existing. If your world cannot access the Holy Mass, you will no longer be existing.`,
+      },
+      {
+        id: "levels-of-human-beings",
+        title: "Levels of Human Beings",
+        content: `Holy Archangel Sheila continued, "See, there are levels of human beings: there are those suffering for doing right, there are those suffering for their sins, for doing wicked, and there are those who are victim souls, who are suffering both for all the evil and good that people do. That you are suffering for doing right is your portion, that God is using you to put things that are not right into order. Then, if you are suffering for doing wrong, that one is punishment for your wickedness. And satan will be the one giving you that kind of delicacy. Are you listening to me?
+
+Stop comparing satan with God. Satan is a policeman; he is like a cane that God uses to correct you. Once you do what is bad, you have opened the door for demons. They have the code, they have the nomenclature, they are creatures by God. So, they must do what they are supposed to do. If God says, this is what you are supposed to do, the only thing He cannot allow satan to do is to control your energy, to control your will. That is the only thing he is looking for; once he gets your will, you are done, and that is why God is not happy, that once the will of satan comes to you, you will take your will and give to him, that is why God cries. That is where God cries. The Holy Spirit said, your body is the temple of the Holy Spirit."`,
+      },
+      {
+        id: "when-a-child-is-born",
+        title: "When a Child Is Born",
+        content: `Holy Archangel Sheila continued, "So, if a child is born, the first three months, the Holy Spirit will come in like a pebble and drop, as soon as he is coming into the world, as soon as it is three months. Before three months, He has finished releasing all the channels of His energy to connect the child to Heaven, then, 'ona eluzi', the 3rd three months, that child's authority will start functioning with that energy, then he has connected with God. Just like you bought a phone, you put a sim-card and you start calling people, and by then, that child must have done Baptism. That child must have received all the rights of coming to the world. Throughout that part, the Holy Spirit continues to control that child, and the child gets to the seventh year. Let me not begin to explain what happens in the 1st year, 2nd year, 3rd year, 4th year, 5th year and 6th year, but as soon as the child is up to the seventh year, what happens? The power of connection, that is, the free will connection, will start shrinking back because the child's intention is already what? Complete. That is where the child can know, this is good or bad, and any sin that child commits from then onwards will be recorded for the child. If the child tells a lie, they will record it.
+
+Holy! Holy! Holy! Is the Lord!
+
+So, that was the reason: as soon as the Holy Spirit in him or her started shrinking, the child will be allowed to start having knowledge of good and bad. And as it is going, the Angel of acquitting, that is, the Acquitting Angel, is recording, and the Judgement Angel is recording, and the guardian Angel is fore-seeing that the child's movement is not delayed, that the destiny is not delayed. But if there is a covenant in your family, your destiny can be thwarted. Your guardian Angel cannot do anything. Why he or she cannot do anything is because there is already a sin from your parents and it will be causing problem. If you want to go, it will say no, this road is blocked, so, there is nothing he or she can do. It is you that is being blocked that can connect heaven and strangle the powers in order for you to be empowered. If you do not strangle the powers, the powers will hold you in bondage.
+
+If Daniel did not pray so that his prayers would be answered, God sent who? Michael. Immediately God sent Michael, the prince of Persia knew that his time was up and he gave way. Then, the Angel that was sent was able to come and carry out his mission. Some of you will not feed your guardian Angels. You will be making them yawn, looking for food. Instead of you feeding him or her, you will be sacrificing yourself to impotency, you will be going out to different sexual immoralities, you are killing them, and you will be telling lies, and your lies will be like a helmet. You will be exposing yourself to dangerous attitudes of chaos. Energies that are flying, do you know how many energies are flying in the air? Then you will come back, 'God forgive me, I have sinned, forgive me.' Yes, you have sinned, fine, but are you ready to make amends? God will shut up that area; once He shuts up that area, there will be no connection, but you have to fight on. Complaining, murmuring, bitterness, cry, tears, everything." He speaks in a strange language, "Oma jalotikinuo nso wonu."`,
+      },
+      {
+        id: "the-angels-that-record",
+        title: "Angels",
+        content: `Everybody comes into this world with, apart from your guardian Angels, your acquitting Angels and your judgement Angels. So, if your acquitting Angels look at the situation and see, you did it but it is not your fault, we will not write it, but the judgement Angels will do what? Once you are the one who committed it, it will note it down. So this is what they will bring before God during the time of your judgement. Imagine, from the time you were born, the recording continues, and as soon as you close your eyes and come to the chamber of judgement, your acquitting Angel will only bring the little places where you were acquitted because you did not know what you were doing.
+
+He spoke in a strange language, "Ka you people na marofie, put off that, emeso ledieyi mishua!" (Note: NEPA light suddenly came and the noisy fan automatically switched on, that was why he said, put off that.) Holy Archangel Sheila continued, "Mafue, I don't need noise please. You can leave the one that is not noisy (the fan that is not noisy). Emajalituani, I don't need noise, kilodaa, kilodaa, off it. Doma natie, selo makadim. I can contain this. Uma fue, umafue, are you listening to me? Omajalo kondie nyia nwofua. When a spirit enters the earth to carry out God's word and God's will, there is no power that can vanquish those spirits, if the person they are using is living on the right side.
+
+Do you know that there are Angels that have not visited the earth? We have battalion Angels that have not visited the earth. Are you listening to me? God did not give them the code. There are also demons that have not visited the earth, yes, God did not allow them to visit the earth, because your world is like this, how much more when they allow such spirits to visit the earth. Some of you will be walking and your head will be falling, you will be taken over by who? They will start using you to complete the assignment that lucifer did not complete (nke lucifer lufodu)."`,
+      },
+      {
+        id: "a-crown-that-reaches-to-heaven",
+        title: "A Crown That Reaches to Heaven",
+        content: `Holy Archangel Sheila said, "You are called and chosen. You look at the stones in the altar. The sacrifice of the Blood enters the stone to activate it, and these are things I will not start to explain to you. I will not begin to tell you some secret things that are going on in the altar. The only one I can tell you is that there is a crown that reaches to Heaven from this altar. A crown that is twelve (12), but its height is from earth to the sky, to the throne of God. God is putting His leg on that crown to connect to this city. Are you listening to me? It is not everything I will start explaining to you.
+
+The same way, the dragon has put up the image of the serpent, to move from earth to heaven, just to make sure he does not allow you to enjoy God's frivolities. All he wants is to cut you out."
+
+Holy Archangel Sheila continued with the song, "Many, many shall come to the what?" he asked, and some of the members of the choir who were present took it up from there and sang the song:
+
+Many, many shall come to the mountain of Jacob to serve Him.
+Many, many shall come to the mountain of Israel to serve Him.
+Many, many shall come to the mountain of New Jerusalem to see Him.
+O, o the Lamb is here, hailing, hailing among the children oo.
+The Lamb is hailing, hailing among the stars of Jacob.
+Jesus the Lamb, the Lamb of God, whom all the powers of men, etc.
+
+Holy Archangel Sheila cut in with a strange language and said, "Mujali, mujali, mujali, aletemiante, you have done well." He asked, "Did you hear the lyrics? Many of you are singing but you do not understand the lyrics. Is it not true? You heard the lyrics. Who did it say will come to the city to worship? Who did it say would come to the New Jerusalem to worship?" People were giving diverse answers. Some said, sons of Jacob, some answered different things, but Holy Archangel Sheila kept on asking, "How many, and who and who did it say will come to the City? Many, many shall come." Holy Archangel Sheila asked again, "Many, many are under who? Jacob's Children."
+
+Holy Archangel Sheila said in a strange language, "Omosherieno, what are you answering? Simple thing you cannot answer. Yes, Jacob's Children."`,
+      },
+      {
+        id: "types-of-stars-among-the-children-of-jacob",
+        title: "Types of Stars Among the Children of Jacob",
+        content: `All of you are stars among Jacob's Children. Some of you are bad stars, some of you are good stars, some of you are shining stars, some of you are fading stars, some of you are golden stars, some of you are diamond stars. If you do not belong to one of these stars, then you are nothing to write home about. If you are in dark stars, your energy is weaned out. If your star has been injured, try and fan it so that it can be clean.`,
+      },
+      {
+        id: "the-staff-and-the-four-gates",
+        title: "The Staff",
+        content: `You look at the staff, the staff has how many legs? Four legs. Each of them is representing who? (2 times). The four gates of the New Jerusalem City.
+
+And it is being controlled by how many guardian Angels? Three Angels each.
+
+Each of the gates is written with what and what? All the Apostles' names are written on each of the gates, because that is where you are going to enter, as soon as they finish building it.
+
+Any time the feast is coming, when they are going to blow the trumpet, when they are doing proclamation, as soon as you are entering, everybody, because it will be too much. So, at each of the gates, you must have where you will be entering through, and your passport will be checked, or your ID card must be checked. You will be entering simultaneously. Just like any time you want to call your name during the time of novena when you are doing sanctifying prayer, you mention your name, as soon as you are mentioning your family, your name is pressed. The Angel in charge will press your name. So, it is happening simultaneously, within a twinkle of an eye, everybody's name is recorded for coming to that feast. So, anything that is to be done in the Novena, you will be partakers of it. If you are not a member of the city, you cannot come and begin to enjoy the gain of the City.`,
+      },
+      {
+        id: "the-four-corners-and-the-gates",
+        title: "The Four Corners and the Gates",
+        content: `So, the four corners, because the City will be built so that it will have four corners. It will be like," he spoke in a strange language, "moja vore nieni," it will be like a stadium. Are you listening to me? That has four entrances. Each of the entrances will have how many gates? Three gates. So, the one that will be in the north, the one in the east, the one in the south and the one in the west. As soon as the name is called, there will be proclamation. As soon as the name is mentioned, all of you will be showing your passports. As you are crossing, you must pass through the governor of your consensus. If it is Peter, you must pass through Peter, because on top of it you will see the images of the twelve Apostles. Under it there will be a gate: Peter's image, Andrew, John, etc. So, as soon as they are calling, you will be coming, and as you are going, you will go and take your seat. Everybody will have their own places of seating.
+
+So, as soon as the sitting is done, all the Priests need to do is to carry out the function as they are doing now: the Holy Mass and the renewal of the marriage vow. These are the most important part of the Feast. Are you listening to me? Without the renewal of the marriage vow, there is nothing like the wedding feast of the Lamb. That is why, if you check and look at the Throne Chair, you will see the Lamb where it was depicted on the Throne Chair. Do you see it or not? Yes, we do. And you see the Dove.`,
+      },
+      {
+        id: "the-other-world-and-the-book-of-life",
+        title: "The Other World and the Book of Life",
+        content: `The dove is where? How many places can you notice the dove on the Throne Chair? How many?" Many answers were given, 6, 3, 4.
+
+Holy Archangel Sheila said in a strange language, "Onama ja lotie niki owayaye. Human beings!" Strange language, "Mala torienie kita bonie jakotese nishe ya, you see it every day but you don't read meanings." All you do is keep on asking, give me Holy Spirit, I need children, I need money, I need home, I need school, every day, you need one thing or the other. Are you still satisfied? You will keep needing until you enter the other world. When you come to the other world, there is nothing like needing again. All you will be seeing is the Word of God controlling powers. And you will hear the Angels stop, you will stop, nobody will tell you to stop.
+
+If this place is not meant for you, if your name is not written in the Book of Life, there is no argument. As soon as you raise your eyes, what have I done? All that you have done from the time you were 7 years old will start playing. If you have stolen from your mother's pot, it will show. If you have committed fraud, it will show. And they will see where it is being cancelled, cancelled, cancelled, cancelled. Some of you may be lucky, your sins may be cancelled and only 2 sins will take you to hell fire. And that may be unforgiveness, or it may be when you are committing the sin of adultery and you die on top of that bed without getting repentance. If you escape sin and enter heaven like the good thief who entered with Jesus, you are a lucky human being.`,
+      },
+      {
+        id: "the-secret-of-being-a-champion",
+        title: "The Secret of Being a Champion",
+        content: `Holy! Holy! Holy! Is the Lord!
+
+If you want to be a champion, there are secret ways of being a champion. The only secret way of being a champion in Christ is what? What is the only way of being a champion in Christ?" Some people said Love, others Charity, others some other things. Holy Archangel Sheila said in a strange language, "Majolo kediaywushile, you are making noise."
+
+Someone gently said, "Submitting your total will to God." Holy Archangel Sheila exclaimed, "The Will! What does God need from you? The Will. Jesus said, let Thy will be done. You should make it your prayer point. It is not easy." He cried. Didn't He cry? "Father, take this thing away from me, but let Your will be done."
+
+Like Peace, when she begins to lament, in a strange language, "Osiboro kie, osibojagon hei, oshele meio, ewotavuonie, Peace o, ontalonie, e-ce," every time, what have I done, this God, every time, You have been doing this to me. Does it mean You are suffering me? What have I done? Is there any sin I have committed? Show me, please, I will beg You, I will beg You. It is too much, it is too much. Before she will finish that one, we will parcel another one and give her. As soon as she would say, somebody is dying at the hospital, we need help, we need to get help, we will come and drain energy and go. That is the way it happens. So there is nothing you can talk about it. It is somebody that must give sacrifice. Jesus did it for you, true or false?
+
+Strange language, "Ojalonutoebu." Do you know what is paining Jesus today? Do you know why He is moving around, looking for you to repent? He is looking like all His effort is in vain. When He is looking at you, that He has allowed His Blood to be shed, you open your mouth and say there is nothing like Jesus, and you say that He is a scam, you say that Jesus is what? A scam. Let them continue to scam you people. How dare you? Do you know the sovereignty of God is an eternal one, and He rules in His kingdom with the version of the Word? God does not rule with your mind, He rules with His Word. His Word is Amen and Amen and Amen, and it is the Word that He planted in the womb of who? Mary.`,
+      },
+      {
+        id: "the-mystery-of-marys-womb",
+        title: "The Mystery of Mary's Womb",
+        content: `He provided Himself a home, and Mary is His home. How can you expect God to come into an ordinary being that was connected with flesh? He brought a flesh through the womb of Ann and Joachim, and He put them. He knows that there is no time the womb of a human can connect. So, He had to provide for Himself when they were too old. There would be nothing like their egg running out of version, so there would be no corruption. The egg of a woman and the egg of a man are what come together to bring forth conception. True or false? True. So, in the world of Joachim and Ann, no one can understand the pleasurable act of God in that connection. It is a spiritual mystery. He came down and provided for Himself. And that was the reason Mary was without sin, and on that notion, will He begin to tell you everything He does? No. That is why the devil sees Mary and runs, he can't stay. But he can challenge Him, that is why he brought Eve and was using the image of Eve to mesmerize so many things in you, but he calls her, the Blessed Virgin, the wicked Virgin. Are you calling Her the wicked Virgin? God decided, because you, lucifer, failed Him, He decided to build another what? He is a great Omnipotent, Omnipresent and Omniscient. You cannot outweigh Him by science. He created many of you scientists, but what He has already ordained by Himself, you cannot change.
+
+Strange language, "Ojala torieni isikini nunsho owafienie ntekede bionsowatala nie. Yadubaka Adnuja huletie ukabueva. Emesobuwa njiani." He entered by Himself, provided a body for Himself in a female gender and provided, with caution, everything that is needed to be born. Do you think that Mary's womb is just an ordinary womb? No.
+
+Mary's womb has a lot of consensus of energy of powers, God's divine pot of neurons, unshakable energies. I don't know what I can use in your world to make you understand the teaching I am giving you. Strange language, "Enota bueni, Enota seki dibiamda boya imijeko wantie sekiri micholuwa." He entered and built Himself. The devil does not know how to do anything but to destroy. That is why he is calling Her what? Envelope. He put it in your mouth, you humans, to say that Mary is an envelope. How can Mary be an envelope? Is it a difficult thing that God can build an image for Himself that can give birth to Himself, and come out Himself and establish Himself as a crowned warrior, who is the one ruling from generation to generation of man in the personal image of Christ? Is it a difficult thing? No. He who can give life can take life. It took Him time to make sure that Abraham was ready for the birth of Isaac; Abraham came in, brought forth Isaac. Do you know what He did? That one is a nomenclature of another day.
+
+Strange language, "Anoshegia Botswani eletivu nja lanie. Must He tell you everything?" See, let me tell you the only problem with God that, at times, we Angels begin to ask, but why must this thing be happening like this? Do you know the only problem of God? God's only problem is you, man. It is you, man. What is in you is not in me; the way God formed you is not the way He formed me.`,
+      },
+    ],
+  },
+  {
     id: "jesus-the-tree-of-life",
     title: "Jesus the Tree of Life",
     author: "Holy Archangel Sheila",
