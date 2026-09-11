@@ -7,7 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/SectionHeader";
-import { HomeMessageCard } from "@/components/HomeMessageCard";
+import { MessagesCarousel } from "@/components/MessagesCarousel";
 import { EventsCarousel } from "@/components/EventsCarousel";
 import { QuickLinksCard } from "@/components/QuickLinksCard";
 import { JoinMissionCard } from "@/components/JoinMissionCard";
@@ -50,13 +50,9 @@ export default function HomePage() {
                 </Button>
               </Reveal>
 
-              <div className="mt-9 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
-                {promoted.map((item, i) => (
-                  <Reveal key={item.id} delay={i * 0.06}>
-                    <HomeMessageCard item={item} />
-                  </Reveal>
-                ))}
-              </div>
+              <Reveal delay={0.1} className="mt-9">
+                <MessagesCarousel items={promoted} />
+              </Reveal>
             </div>
 
             {/* SECONDARY: Upcoming Events (demoted) + sidebar */}
