@@ -1,21 +1,26 @@
+import { ArrowRight } from "lucide-react";
+
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Footer } from "@/components/Footer";
 import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeader } from "@/components/SectionHeader";
-import { EventsCarousel } from "@/components/EventsCarousel";
-import { MessageListItem } from "@/components/MessageListItem";
+import { HomeMessageCard } from "@/components/HomeMessageCard";
+import { HomeEventCard } from "@/components/HomeEventCard";
 import { QuickLinksCard } from "@/components/QuickLinksCard";
 import { JoinMissionCard } from "@/components/JoinMissionCard";
 import { OurWorkGrid } from "@/components/OurWorkGrid";
 import { GalleryHighlights } from "@/components/GalleryHighlights";
 
 import { events } from "@/data/events";
-import { latestMessages } from "@/data/messages";
+import { getFeaturedItems } from "@/lib/library";
 import { site } from "@/data/site";
 
 export default function HomePage() {
+  const promoted = getFeaturedItems().slice(0, 3);
+
   return (
     <>
       <Header />
@@ -23,41 +28,64 @@ export default function HomePage() {
       <main>
         <Hero showQuoteCard />
 
-        {/* Community band: events + latest messages, with sidebar rail */}
-        <section className="bg-brand-cream py-16 sm:py-20 lg:py-24">
+        {/* Content band: promoted messages, then demoted events + sidebar */}
+        <section className="bg-brand-cream pb-16 pt-12 sm:pb-20 sm:pt-14">
           <Container>
-            <div className="grid gap-12 lg:grid-cols-12 lg:gap-10">
-              {/* Main column. min-w-0 lets this grid track shrink below its
-                  content's min-content width (the carousel), preventing
-                  horizontal overflow on small screens. */}
-              <div className="min-w-0 lg:col-span-8">
-                {/* Upcoming Events */}
-                <Reveal>
-                  <SectionHeader
-                    title="Upcoming Events"
-                    link={{ label: "View All Events", href: "/events" }}
-                  />
-                </Reveal>
-                <Reveal delay={0.1} className="mt-6">
-                  <EventsCarousel events={events} />
+            {/* PRIMARY: Messages from the Holy Spirit */}
+            <div className="border-t border-brand-gold/25 pt-12 sm:pt-14">
+              <Reveal className="flex flex-col items-start justify-between gap-5 sm:flex-row sm:items-end">
+                <div>
+                  <p className="eyebrow text-brand-gold">Words For Today</p>
+                  <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-brand-ink sm:text-4xl">
+                    Messages from the Holy Spirit
+                  </h2>
+                  <p className="mt-3 max-w-xl text-brand-muted">
+                    Prayers, teachings and prophetic words shared with the New
+                    Jerusalem City family.
+                  </p>
+                </div>
+                <Button href="/messages" size="lg" className="shrink-0 text-white">
+                  View All Messages
+                  <ArrowRight className="h-4 w-4" />
+                </Button>
+              </Reveal>
+
+              <div className="mt-9 grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+                {promoted.map((item, i) => (
+                  <Reveal key={item.id} delay={i * 0.06}>
+                    <HomeMessageCard item={item} />
+                  </Reveal>
+                ))}
+              </div>
+            </div>
+
+            {/* SECONDARY: Upcoming Events (demoted) + sidebar */}
+            <div className="mt-16 grid gap-8 lg:grid-cols-3 lg:gap-10">
+              <div className="min-w-0 lg:col-span-2">
+                <Reveal className="flex items-baseline justify-between gap-4">
+                  <h2 className="font-serif text-xl font-bold text-brand-ink sm:text-2xl">
+                    Upcoming Events
+                  </h2>
+                  <a
+                    href="/events"
+                    className="group inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-brand-gold transition-colors hover:text-brand-goldDark"
+                  >
+                    View All Events
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                  </a>
                 </Reveal>
 
-                {/* Latest Messages */}
-                <Reveal className="mt-14">
-                  <SectionHeader
-                    title="Latest Messages"
-                    link={{ label: "View All Messages", href: "/messages" }}
-                  />
-                </Reveal>
-                <Reveal delay={0.1} className="mt-6 space-y-2">
-                  {latestMessages.map((message) => (
-                    <MessageListItem key={message.id} message={message} />
+                <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {events.map((event, i) => (
+                    <Reveal key={event.id} delay={i * 0.05}>
+                      <HomeEventCard event={event} />
+                    </Reveal>
                   ))}
-                </Reveal>
+                </div>
               </div>
 
               {/* Sidebar rail */}
-              <aside className="min-w-0 space-y-6 lg:col-span-4">
+              <aside className="min-w-0 space-y-6">
                 <Reveal>
                   <QuickLinksCard />
                 </Reveal>
