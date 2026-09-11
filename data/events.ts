@@ -16,7 +16,7 @@ export const events: EventItem[] = [
     title: "Holy Trinity Feast",
     description:
       "The Holy Trinity feast, a feast held during the Catholic Church's Holy Trinity feast day.",
-    image: images.events.trinity,
+    image: "/Holy-T.jpg",
     href: "/events/holy-trinity-feast",
   },
   {
