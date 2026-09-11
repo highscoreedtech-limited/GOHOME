@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { site } from "@/data/site";
 import { images } from "@/data/images";
 import { Button } from "./ui/Button";
 import { Container } from "./ui/Container";
+import { HeroSlideshow } from "./HeroSlideshow";
 import { DailyEncouragementCard } from "./DailyEncouragementCard";
 
 /**
@@ -21,16 +21,9 @@ export function Hero({ showQuoteCard = true }: { showQuoteCard?: boolean }) {
 
   return (
     <section className="relative overflow-hidden bg-brand-dark" aria-label="Introduction">
-      {/* Background image + gradient scrims for text legibility */}
+      {/* Background slideshow (gallery photos) + gradient scrims for legibility */}
       <div className="absolute inset-0">
-        <Image
-          src={images.hero}
-          alt="A person kneeling in prayer on a beach at sunset"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-right"
-        />
+        <HeroSlideshow images={images.gallery} />
         <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-brand-dark/20" />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-brand-dark/40" />
       </div>
