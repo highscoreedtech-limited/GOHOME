@@ -3,9 +3,9 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Category tabs rendered as a segmented control: a pill group inside a light
- * container. The active tab is filled white with a subtle shadow; inactive tabs
- * are plain text. Scrolls horizontally when the tabs overflow (many categories).
+ * Category filters rendered as a row of rounded pills. The active pill is filled
+ * gold; inactive pills are outlined. Scrolls horizontally when the pills overflow
+ * (many categories).
  */
 export function CategoryFilters({
   categories,
@@ -20,7 +20,7 @@ export function CategoryFilters({
     <div
       role="tablist"
       aria-label="Filter by category"
-      className="flex gap-1 overflow-x-auto rounded-full bg-brand-ink/[0.06] p-1"
+      className="no-scrollbar -mx-1 flex gap-2 overflow-x-auto px-1 py-1"
     >
       {categories.map((category) => {
         const isActive = category === active;
@@ -32,10 +32,10 @@ export function CategoryFilters({
             aria-selected={isActive}
             onClick={() => onChange(category)}
             className={cn(
-              "shrink-0 whitespace-nowrap rounded-full px-4 py-1.5 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold",
+              "shrink-0 whitespace-nowrap rounded-full px-4 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-gold",
               isActive
-                ? "bg-white text-brand-ink shadow-sm"
-                : "text-brand-muted hover:text-brand-ink",
+                ? "bg-brand-gold font-semibold text-white"
+                : "border border-black/10 text-brand-muted hover:border-brand-gold/40 hover:text-brand-ink",
             )}
           >
             {category}
