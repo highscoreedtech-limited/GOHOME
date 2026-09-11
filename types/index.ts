@@ -79,6 +79,23 @@ export interface GalleryImage {
   title?: string;
 }
 
+/** A video shown on the Videos page (usually a YouTube upload). */
+export interface VideoItem {
+  id: string;
+  title: string;
+  /** Sermons | Worship | Testimonies | Events (drives the filter pills). */
+  category: string;
+  /** YouTube video id; when set, the card plays in a lightbox and shows the
+   *  YouTube thumbnail. Leave empty until the real upload is available. */
+  youtubeId?: string;
+  /** Runtime label, e.g. "34:12". */
+  duration?: string;
+  /** ISO date the video was published. */
+  publishedAt?: string;
+  /** Optional local thumbnail in /public; overrides the YouTube thumbnail. */
+  thumbnail?: string;
+}
+
 /* ------------------------------------------------------------------ *
  * Messages Library (frontend-only digital reading experience)
  * ------------------------------------------------------------------ */
