@@ -6,12 +6,13 @@ import { quickLinks } from "@/data/messages";
 import { Logo } from "./Logo";
 import { Container } from "./ui/Container";
 
+// Only show social links that have a real URL set (skip "#" placeholders).
 const socials = [
   { label: "Facebook", href: site.social.facebook, icon: Facebook },
   { label: "Instagram", href: site.social.instagram, icon: Instagram },
   { label: "YouTube", href: site.social.youtube, icon: Youtube },
   { label: "Twitter", href: site.social.twitter, icon: Twitter },
-];
+].filter(({ href }) => href && href !== "#");
 
 /** Site footer, dark, four columns, social row, contact info, copyright. */
 export function Footer() {
@@ -34,6 +35,8 @@ export function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-white/70 transition-colors hover:border-brand-gold hover:text-brand-goldLight"
                 >
                   <Icon className="h-4 w-4" />

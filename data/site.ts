@@ -35,7 +35,7 @@ export const site = {
     hours: ["Mon to Fri: 9AM to 5PM (WAT)", "Sat: 10AM to 1PM (WAT)"],
   },
   social: {
-    facebook: "#",
+    facebook: "https://facebook.com/share/1EowUBDyT6",
     instagram: "#",
     youtube: "#",
     twitter: "#",
