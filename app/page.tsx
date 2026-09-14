@@ -13,6 +13,7 @@ import { QuickLinksCard } from "@/components/QuickLinksCard";
 import { JoinMissionCard } from "@/components/JoinMissionCard";
 import { OurWorkGrid } from "@/components/OurWorkGrid";
 import { GalleryHighlights } from "@/components/GalleryHighlights";
+import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 import { events } from "@/data/events";
 import { getLatestItems } from "@/lib/library";
@@ -121,6 +122,8 @@ export default function HomePage() {
       </main>
 
       <Footer />
+
+      <WhatsAppButton />
     </>
   );
 }
