@@ -53,7 +53,7 @@ export const libraryItems: LibraryItem[] = [
       "mary",
       "book of life",
     ],
-    coverImage: cover("wonders-of-the-rosary-and-the-crown"),
+    coverImage: "/Mother-Mary.png",
     estimatedReadingTime: "30 min read",
     publishedAt: "2026-06-01",
     chapters: [
@@ -183,7 +183,7 @@ Strange language, "Anoshegia Botswani eletivu nja lanie. Must He tell you everyt
     description:
       "An October seminar teaching on the New Jerusalem as the spiritual capital city, the Altar of Eternal Beginning, the Tree of Knowledge that is Christ Himself, the fall of Adam, and the opened eyes of Peter. Given on 26th October 2025.",
     tags: ["new jerusalem", "tree of life", "adam", "abraham", "peter"],
-    coverImage: cover("jesus-tree-of-life"),
+    coverImage: "/Jesus-the-tree-of-life.jpg",
     estimatedReadingTime: "15 min read",
     publishedAt: "2025-10-26",
     chapters: [
@@ -384,7 +384,7 @@ The Holy Spirit said, "I do not want to go deeper so that you do not become too 
     description:
       "A seminar teaching on Divine Mercy: the Door and Key of Mercy given to St. Faustina, the spiritual dialysis of the Blood of Jesus, and why you must never miss the Divine Mercy prayer. Given on 26th October 2025.",
     tags: ["divine mercy", "the blood", "transformation", "faustina", "prayer"],
-    coverImage: cover("divine-mercy"),
+    coverImage: "/divine-mercy.jpg",
     estimatedReadingTime: "9 min read",
     publishedAt: "2025-10-26",
     chapters: [
