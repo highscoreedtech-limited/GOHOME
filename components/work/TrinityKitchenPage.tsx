@@ -377,10 +377,14 @@ function PictureCard({
   );
 }
 
-/** Alternate the row direction so photos zig-zag down the page. */
+/**
+ * Alternate the row direction so photos zig-zag down the page. On mobile the
+ * children stack full width (no `items-center`, which would collapse the
+ * fill-image box); centering only kicks in on the desktop row.
+ */
 function cnRow(reverse: boolean): string {
   return [
-    "flex flex-col items-center gap-8 lg:gap-16",
+    "flex flex-col gap-8 lg:items-center lg:gap-16",
     reverse ? "lg:flex-row-reverse" : "lg:flex-row",
   ].join(" ");
 }
