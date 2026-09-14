@@ -10,7 +10,10 @@ import { site } from "@/data/site";
  * link stays correct if the displayed format changes).
  */
 export function WhatsAppButton() {
-  const number = site.contact.phone.replace(/\D/g, "");
+  const number = (site.contact.whatsapp ?? site.contact.phone).replace(
+    /\D/g,
+    "",
+  );
   const text = encodeURIComponent(
     "Hello, I would like to know more about the New Jerusalem City.",
   );

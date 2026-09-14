@@ -31,6 +31,8 @@ export const site = {
     email: "suppertableofnewjerusalemcity@gmail.com",
     phone: "+234 803 337 4746",
     phoneAlt: "+234 810 829 9295",
+    // WhatsApp support number in international format, digits only (for wa.me).
+    whatsapp: "2349133973557",
     address: "1 Chukwuma Azide, Enugu, Nigeria.",
     hours: ["Mon to Fri: 9AM to 5PM (WAT)", "Sat: 10AM to 1PM (WAT)"],
   },
