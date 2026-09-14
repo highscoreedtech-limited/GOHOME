@@ -13,7 +13,21 @@ import {
 } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Reveal } from "@/components/ui/Reveal";
+import { HeroSlideshow } from "@/components/HeroSlideshow";
 import type { JacobsWellContent } from "@/types";
+
+/**
+ * Photos cycled behind the hero: the Trinity Kitchen photos first, then a few
+ * gallery moments, so the header animates like the home page.
+ */
+const HERO_IMAGES = [
+  "/Trinity-k1.jpg",
+  "/tk-classroom.jpg",
+  "/tk-tent-teaching.jpg",
+  "/gallery-2.jpg",
+  "/gallery-5.jpg",
+  "/gallery-8.jpg",
+];
 
 /**
  * Bespoke Trinity Kitchen page (a Jacob's Well work of charity): a dark hero,
@@ -69,18 +83,22 @@ export function TrinityKitchenPage({
     <>
       {/* HERO */}
       <section className="relative overflow-hidden bg-brand-dark">
-        {/* Dot texture + warm glow */}
-        <div
-          aria-hidden
-          className="absolute inset-0 opacity-50 [background-image:radial-gradient(rgba(169,134,58,0.5)_1px,transparent_1px)] [background-size:34px_34px]"
-        />
+        {/* Animated gallery slideshow with lighter scrims so photos show */}
+        <div className="absolute inset-0">
+          <HeroSlideshow images={HERO_IMAGES} />
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-gradient-to-r from-brand-dark/95 via-brand-dark/70 to-brand-dark/25"
+          />
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-transparent to-brand-dark/20"
+          />
+        </div>
+        {/* Warm glow accent */}
         <div
           aria-hidden
           className="pointer-events-none absolute -right-32 -top-40 h-[640px] w-[640px] rounded-full bg-[radial-gradient(circle,rgba(169,134,58,0.16)_0%,transparent_70%)]"
-        />
-        <div
-          aria-hidden
-          className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"
         />
 
         <Container className="relative">
