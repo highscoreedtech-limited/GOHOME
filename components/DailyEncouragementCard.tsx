@@ -41,18 +41,23 @@ export function DailyEncouragementCard({ className }: { className?: string }) {
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
       className={cn(
-        "w-full max-w-sm rounded-2xl border border-white/10 bg-brand-dark/80 p-6 shadow-card backdrop-blur-md",
+        "w-full max-w-sm rounded-2xl border border-white/10 bg-brand-dark/80 p-4 shadow-card backdrop-blur-md sm:p-6",
         className,
       )}
     >
-      <h3 className="font-serif text-lg font-semibold text-white">{heading}</h3>
+      <h3 className="font-serif text-base font-semibold text-white sm:text-lg">
+        {heading}
+      </h3>
 
-      <Quote className="mt-4 h-7 w-7 text-brand-gold" aria-hidden="true" />
+      <Quote
+        className="mt-3 h-6 w-6 text-brand-gold sm:mt-4 sm:h-7 sm:w-7"
+        aria-hidden="true"
+      />
 
       {/* Cross-fade: both verses share one grid cell so the old fades out as
           the new fades in (Windows-style), with no layout jump or clipping.
           aria-live announces each new verse to screen readers. */}
-      <div className="mt-2 grid min-h-[120px]" aria-live="polite">
+      <div className="mt-2 grid min-h-[88px] sm:min-h-[120px]" aria-live="polite">
         <AnimatePresence>
           <motion.blockquote
             key={index}
@@ -62,10 +67,10 @@ export function DailyEncouragementCard({ className }: { className?: string }) {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.9, ease: "easeInOut" }}
           >
-            <p className="text-[15px] italic leading-relaxed text-white/85">
+            <p className="text-sm italic leading-relaxed text-white/85 sm:text-[15px]">
               &ldquo;{verse.quote}&rdquo;
             </p>
-            <cite className="mt-3 block text-sm font-semibold not-italic text-brand-goldLight">
+            <cite className="mt-2 block text-xs font-semibold not-italic text-brand-goldLight sm:mt-3 sm:text-sm">
               {verse.citation}
             </cite>
           </motion.blockquote>
@@ -73,7 +78,7 @@ export function DailyEncouragementCard({ className }: { className?: string }) {
       </div>
 
       {/* Dot indicators */}
-      <div className="mt-3 flex gap-1.5" aria-hidden="true">
+      <div className="mt-2.5 flex gap-1.5 sm:mt-3" aria-hidden="true">
         {verses.map((_, i) => (
           <span
             key={i}
@@ -85,7 +90,7 @@ export function DailyEncouragementCard({ className }: { className?: string }) {
         ))}
       </div>
 
-      <Button href={cta.href} className="mt-5 w-full">
+      <Button href={cta.href} className="mt-4 w-full sm:mt-5">
         {cta.label}
         <ArrowRight className="h-4 w-4" />
       </Button>
