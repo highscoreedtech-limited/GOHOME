@@ -35,6 +35,129 @@ export const CATEGORIES = [
 
 export const libraryItems: LibraryItem[] = [
   {
+    id: "women-who-find-it-hard-to-get-married",
+    title: "Women Who Find It Difficult to Get Married",
+    author: "The Holy Spirit",
+    category: "Family",
+    description:
+      "A teaching given by the Holy Spirit on 11 November 2015 through Princess Vivian Mary Peace: why some women find it hard to marry, settling down with Jesus Christ when marriage does not come, the glory of the saints and the apostles, discerning a spouse beyond appearance and wealth, and a warning against fornication and adultery.",
+    tags: [
+      "marriage",
+      "singleness",
+      "women",
+      "virtue",
+      "vocation",
+      "chastity",
+      "discernment",
+    ],
+    coverImage: cover("women-who-find-it-hard-to-get-married"),
+    estimatedReadingTime: "12 min read",
+    publishedAt: "2015-11-11",
+    chapters: [
+      {
+        id: "difficulty-finding-a-spouse",
+        title: "The Difficulty Some Women Experience in Finding a Spouse",
+        content: `One among us asked the Holy Spirit why singles, especially ladies, sometimes find it very difficult to get a spouse, even after praying for a long time.
+
+The Holy Spirit answered, "There is no child of Mine who will not have someone betrothed to them according to Our own Will. Children."
+
+We answered, "Yes, my Lord."
+
+The Holy Spirit continued, "Some of them are the cause of their own problem. Some will continue to refuse and refuse and refuse several approaches for marriage until their turn for marriage passes by. On that note, whom are you going to blame?"
+
+We answered, "They are to blame, my Lord."
+
+The Holy Spirit said, "There is a time for everything. And then you begin to see them praying from morning till night, from January to December, for God's intervention!
+
+"Let Me use a simple illustration. You plant a seed and it grows to become a tree. From the tree, it bears fruits. As soon as it bears fruits, the owner comes to pluck them. Do you think that those fruits which were not plucked by the owner at the proper time will eventually be plucked at the same time as the others?"
+
+We answered, "No, my Lord."
+
+The Holy Spirit continued, "The fruit will remain there until either birds eat it and it falls, or somebody else comes to pluck it and eat it. On that basis, they are living on a path of luck or chance. And if nobody touches it, it will remain there until it eventually rots away."`,
+      },
+      {
+        id: "settle-down-with-jesus-christ",
+        title: "When Marriage Does Not Come, Settle Down With Jesus Christ",
+        content: `The Holy Spirit further taught that even when a person does not eventually settle down with a husband or wife, he or she should, above all, settle down with Jesus Christ, so that nothing is ultimately lost.
+
+He said that even those who are married, blessed with many children, and whose husbands pamper them, provide good things of life, take them around the world, and shower them with gold and silver, will not necessarily be better off eternally than the person who has completely settled down with Jesus Christ. The reason, He explained, is that such a person has fallen in love with virtue.
+
+The Holy Spirit said that a woman who falls in love with virtue and lives for God without a husband or children will not be considered lesser than a woman who has a husband and many children when both eventually leave this world and come into God's Kingdom.
+
+He explained, "The reason is that you have more children than her because you are like those who have forsaken everything and followed Me, the religious men and women.
+
+"They are those called the Rev. Fathers, Rev. Sisters, and Rev. Brothers! They will gain double upon double upon double upon double of eternal reward!
+
+"These ones are called the sweetest bride of Christ, the Bride of the Lamb! And if they live the life of their calling, they will see God face to face!"
+
+We all exclaimed in awe and amazement at this revelation from the Holy Spirit.`,
+      },
+      {
+        id: "the-glory-of-the-saints-in-heaven",
+        title: "The Glory of the Saints in Heaven",
+        content: `The Holy Spirit continued, "Yes, in Our list in Heaven, We have gotten the names of such people, waiting for the day of revelation when they shall behold their God! Jesus will take them to His Father, and they will see Him face to face!
+
+"Such ones have a mark; they have a special mark on their head. In your world, you decide to call them the Venerable and Canonised Saints.
+
+"There are Saints whom you recognise more deeply on earth, but in Heaven they are not greater than other Saints.
+
+"Children, the right of sainthood is what We carefully entered into with the world through careful communication. The right of Sainthood, We do it by using what is called the 'Sight of Perfection of Ruling with Christ in the Spiritual Order.'"`,
+      },
+      {
+        id: "the-apostles-and-their-heavenly-glory",
+        title: "The Apostles and Their Heavenly Glory",
+        content: `The Holy Spirit then spoke about the Apostles, saying, "The Apostles were given the chance because they were the first helmet of Priesthood. Peter, till the end, left everything to follow Jesus. Today, they are taking decisions in the Council with Jesus!
+
+"If I should begin to tell you the glories of the Apostles, you will not be able to understand in My language, because it will be like clanging cymbals to your ears.
+
+"Their glory is beyond your imagination, and it is something you cannot fathom until you come over! Are you hearing Me?"
+
+We answered, "Yes, my Lord."`,
+      },
+      {
+        id: "do-not-judge-a-spouse-by-appearance",
+        title: "Do Not Judge a Potential Spouse by Appearance or Possessions",
+        content: `The Holy Spirit then gave an important teaching concerning the people who may approach someone for marriage:
+
+"So this is what you must know when husbands come to you. Some are not meant to marry rich husbands; some are meant to marry their mates; some are meant to marry those who are much older than them; some are meant to marry and suffer in their marriage; some are meant to marry and become the queens or wives of the president or a high-level officer in society. Destinies must differ. Are you hearing Me?"
+
+We answered, "Yes, my Lord."
+
+The Holy Spirit continued, "So when you see a man coming for your hand in marriage and you look at him and say, 'This man is not up to my standard,' you may not have the chance to unseal the destiny of that man.
+
+"You say, 'He is not up to my taste.' You do not know that the man might be a very great man whose destiny will only appear as soon as he settles down in holy matrimony, marriage in the Church.
+
+"And you will say, 'I cannot tie down my life with this kind of man. Look at the way he comes to me for marriage. Look at his clothes. Look at how he dresses. He does not even have a car or an ordinary bicycle! I cannot marry this kind of man!' Not knowing that you are missing a golden treasure."
+
+The teaching emphasizes that material possessions, outward appearance, social status, and present circumstances should not be the only criteria by which a potential spouse is judged.`,
+      },
+      {
+        id: "the-danger-of-craving-an-easy-life",
+        title: "The Danger of Rejecting Someone for an Easy Life",
+        content: `The Holy Spirit further said, "Some are Angels that came like men, whom you are supposed to start your life with in order to unlock your golden destiny. But because you do not want to suffer from the start, you chased them away because of your craving for an easy-going life.
+
+"And when you allow him to go and you do not have the chance again, you will start looking for a bridegroom in the gutters of the world.
+
+"That is when men who are after your body will tell you, 'If I do not sleep with you, you cannot be my wife.'
+
+"But those who are virgins of My Heart, I will come in and must help them to succeed!"
+
+We exclaimed, "Amen!"`,
+      },
+      {
+        id: "a-warning-against-fornication-and-adultery",
+        title: "A Warning Against Fornication and Adultery",
+        content: `The Holy Spirit continued, "If you allow yourself to be used by many men, I will let them cheat you down!
+
+"Children, adultery is wicked! Fornication is useless, destructive, and wicked! This is just like idolatry!
+
+"The communion of the union between a man and woman must be a sacred mystery and a sacred vow before the Sacred Throne of God, who is the Creator and Multiplier!"
+
+This teaching emphasizes patience, discernment, virtue, holiness, and trust in God's providence in matters of marriage and vocation. It calls unmarried people to remember that earthly marriage is not the ultimate measure of a person's worth or eternal destiny. Above all, it encourages every person to establish a deep relationship with Jesus Christ, to preserve chastity, and to approach marriage as a sacred union and solemn covenant before God, rather than merely as a means of obtaining wealth, social status, comfort, or worldly security.`,
+      },
+    ],
+  },
+  {
     id: "the-wonders-of-the-rosary-and-the-crown",
     title: "The Wonders of the Rosary & the Crown",
     author: "Holy Archangel Sheila",
