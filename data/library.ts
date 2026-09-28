@@ -50,9 +50,9 @@ export const libraryItems: LibraryItem[] = [
       "chastity",
       "discernment",
     ],
-    coverImage: cover("women-who-find-it-hard-to-get-married"),
+    coverImage: "/image-marriage.png",
     estimatedReadingTime: "12 min read",
-    publishedAt: "2015-11-11",
+    publishedAt: "2026-09-28",
     chapters: [
       {
         id: "difficulty-finding-a-spouse",
