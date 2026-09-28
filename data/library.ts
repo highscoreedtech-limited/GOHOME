@@ -176,7 +176,7 @@ This teaching emphasizes patience, discernment, virtue, holiness, and trust in G
       "mary",
       "book of life",
     ],
-    coverImage: "/Mother-Mary.png",
+    coverImage: "/the-holy-rosary.png",
     estimatedReadingTime: "30 min read",
     publishedAt: "2026-06-01",
     chapters: [
