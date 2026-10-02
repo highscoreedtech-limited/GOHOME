@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import {
   LayoutGrid,
   BookOpen,
@@ -183,10 +184,15 @@ function Sidebar({
       )}
     >
       {/* Brand */}
-      <div className="flex items-center gap-3 px-2 pb-6 pt-2">
-        <div className="flex h-8 w-8 items-center justify-center rounded-md bg-brand-gold/15">
-          <Sparkles className="h-5 w-5 text-brand-gold" />
-        </div>
+      <div className="flex items-center gap-2.5 px-2 pb-6 pt-2">
+        <Image
+          src="/nj-logo.png"
+          alt="New Jerusalem City"
+          width={1859}
+          height={1470}
+          priority
+          className="h-10 w-auto shrink-0 object-contain"
+        />
         <div className="leading-tight">
           <p className="font-serif text-sm font-bold text-brand-cream">
             NEW JERUSALEM CITY
