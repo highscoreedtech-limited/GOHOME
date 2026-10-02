@@ -902,7 +902,7 @@ function MessageComposer({
       </div>
 
       <div className="flex-1 overflow-y-auto">
-        <div className="mx-auto max-w-3xl px-4 py-8 sm:px-8">
+        <div className="mx-auto max-w-5xl px-4 py-8 sm:px-8">
           {notice && (
             <div className="mb-5 rounded-lg border border-brand-gold/30 bg-brand-gold/10 p-3 text-xs text-brand-ink">
               {notice}
@@ -1042,7 +1042,7 @@ function MessageComposer({
                   <textarea
                     value={c.content}
                     onChange={(e) => updateChapter(c.key, { content: e.target.value })}
-                    rows={10}
+                    rows={18}
                     placeholder="Chapter text..."
                     className={fieldCls + " resize-y font-serif leading-relaxed"}
                   />
