@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { MessageStudio } from "@/components/admin/MessageStudio";
+import { AdminApp } from "@/components/admin/AdminApp";
 
 export const metadata: Metadata = {
   title: "Message Studio",
@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 };
 
 export default function AdminPage() {
-  return <MessageStudio />;
+  return <AdminApp />;
 }
