@@ -861,18 +861,10 @@ function MessageComposer({
   }
 
   return (
-    <>
-      <button
-        type="button"
-        aria-label="Close"
-        onClick={onClose}
-        className="fixed inset-0 z-50 bg-black/40"
-      />
-      <div className="fixed inset-y-0 right-0 z-50 flex w-full max-w-md flex-col bg-white shadow-2xl">
-        <div className="flex h-[72px] shrink-0 items-center justify-between border-b border-black/10 px-6">
-          <h2 className="font-serif text-lg font-bold text-brand-ink">
-            {item ? "Edit Message" : "New Message"}
-          </h2>
+    <div className="fixed inset-0 z-50 flex flex-col bg-brand-cream">
+      {/* Top bar */}
+      <div className="flex h-[72px] shrink-0 items-center justify-between gap-4 border-b border-black/10 bg-white px-4 sm:px-6">
+        <div className="flex items-center gap-3">
           <button
             type="button"
             onClick={onClose}
@@ -881,9 +873,36 @@ function MessageComposer({
           >
             <X className="h-5 w-5" />
           </button>
+          <h2 className="font-serif text-lg font-bold text-brand-ink sm:text-xl">
+            {item ? "Edit Message" : "New Message"}
+          </h2>
         </div>
+        <div className="flex items-center gap-2.5">
+          <button
+            type="button"
+            onClick={() =>
+              setNotice("Drafts will be saved once the backend is connected.")
+            }
+            className="rounded-lg border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-brand-ink transition-colors hover:border-brand-gold"
+          >
+            Save Draft
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              setNotice(
+                "Publishing is not connected yet. Once the Sanity backend is wired up, this will post your message to the live library.",
+              )
+            }
+            className="rounded-lg bg-brand-dark px-5 py-2 text-sm font-semibold text-brand-cream transition-colors hover:bg-brand-darker"
+          >
+            Publish
+          </button>
+        </div>
+      </div>
 
-        <div className="flex-1 overflow-y-auto p-6">
+      <div className="flex-1 overflow-y-auto">
+        <div className="mx-auto max-w-3xl px-4 py-8 sm:px-8">
           {notice && (
             <div className="mb-5 rounded-lg border border-brand-gold/30 bg-brand-gold/10 p-3 text-xs text-brand-ink">
               {notice}
@@ -990,7 +1009,7 @@ function MessageComposer({
             <textarea
               value={singleContent}
               onChange={(e) => setSingleContent(e.target.value)}
-              rows={10}
+              rows={18}
               placeholder="Write the message content here..."
               className={fieldCls + " mb-5 resize-y font-serif leading-relaxed"}
             />
@@ -1023,7 +1042,7 @@ function MessageComposer({
                   <textarea
                     value={c.content}
                     onChange={(e) => updateChapter(c.key, { content: e.target.value })}
-                    rows={6}
+                    rows={10}
                     placeholder="Chapter text..."
                     className={fieldCls + " resize-y font-serif leading-relaxed"}
                   />
@@ -1098,30 +1117,8 @@ function MessageComposer({
             </span>
           </button>
         </div>
-
-        {/* Footer actions */}
-        <div className="flex shrink-0 gap-3 border-t border-black/10 p-4">
-          <button
-            type="button"
-            onClick={() =>
-              setNotice(
-                "Publishing is not connected yet. Once the Sanity backend is wired up, this will post your message to the live library.",
-              )
-            }
-            className="flex-1 rounded-lg bg-brand-dark py-3 text-sm font-semibold text-brand-cream transition-colors hover:bg-brand-darker"
-          >
-            Publish
-          </button>
-          <button
-            type="button"
-            onClick={() => setNotice("Drafts will be saved once the backend is connected.")}
-            className="flex-1 rounded-lg border border-black/10 py-3 text-sm font-semibold text-brand-ink transition-colors hover:border-brand-gold"
-          >
-            Save Draft
-          </button>
-        </div>
       </div>
-    </>
+    </div>
   );
 }
 
